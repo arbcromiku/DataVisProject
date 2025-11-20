@@ -49,11 +49,29 @@ header h1 {
 }
 
 .intro {
-    text-align: center;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     margin-bottom: 40px;
+    max-width: 100%; /* Reset max-width constraint if inside container */
+}
+
+.intro h2 {
+    text-align: center;
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.intro ol {
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.intro li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
 }
 
 section {
@@ -72,7 +90,7 @@ h3 {
     padding-left: 15px;
 }
 
-.controls {
+.filters {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px 8px 0 0;
@@ -84,18 +102,33 @@ h3 {
     flex-wrap: wrap;
 }
 
-.controls label {
+.filters label {
     font-weight: 600;
     font-size: 0.9rem;
     margin-right: 5px;
 }
 
 select {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
     font-family: inherit;
     font-size: 0.9rem;
+    color: #374151;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 120px;
+}
+
+select:hover {
+    border-color: #a0aec0;
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
 
 .chart-container {
@@ -147,7 +180,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .controls {
+    .filters {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
