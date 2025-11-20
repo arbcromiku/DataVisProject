@@ -1,82 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Police Enforcement Data Visualization</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>Australian Police Drug Testing Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Police Enforcement - Positive Drug Tests (2008-2024)</h1>
-            <p>Data visualization project for COS30045 Data Visualisation</p>
-        </header>
-        
-        <main>
-            <section id="introduction">
-                <h2>Research Questions</h2>
-                <ol>
-                    <li><strong>Age Patterns</strong>: How do drug test rates vary across age groups, and which drugs are most prevalent in each age demographic?</li>
-                    <li><strong>Geographic Trends</strong>: How have drug test rates evolved over time across Australian jurisdictions, and are there regional patterns in drug type prevalence?</li>
-                    <li><strong>Drug Correlations</strong>: What correlations exist between different drug types in positive tests, and how do these patterns vary by age and location?</li>
-                    <li><strong>Enforcement Analysis</strong>: What's the relationship between positive drug tests and enforcement outcomes (fines, arrests, charges), and how do these vary by drug type and jurisdiction?</li>
-                    <li><strong>Detection Impact</strong>: How do different detection methods affect accuracy and outcomes of drug testing, and what are the implications for understanding true drug usage patterns?</li>
-                </ol>
-            </section>
-            
-            <section id="visualization">
-                <h2>Data Visualizations</h2>
-                
-                <div class="research-question">
-                    <h3>1. Age Patterns Analysis</h3>
-                    <div id="age-patterns-chart" class="chart-container">
-                        <!-- Age patterns visualization will be rendered here -->
-                    </div>
-                </div>
-                
-                <div class="research-question">
-                    <h3>2. Geographic Trends Over Time</h3>
-                    <div id="geographic-trends-chart" class="chart-container">
-                        <!-- Geographic trends visualization will be rendered here -->
-                    </div>
-                </div>
-                
-                <div class="research-question">
-                    <h3>3. Drug Type Correlations</h3>
-                    <div id="drug-correlations-chart" class="chart-container">
-                        <!-- Drug correlations visualization will be rendered here -->
-                    </div>
-                </div>
-                
-                <div class="research-question">
-                    <h3>4. Enforcement Outcomes Analysis</h3>
-                    <div id="enforcement-analysis-chart" class="chart-container">
-                        <!-- Enforcement analysis visualization will be rendered here -->
-                    </div>
-                </div>
-                
-                <div class="research-question">
-                    <h3>5. Detection Method Impact</h3>
-                    <div id="detection-impact-chart" class="chart-container">
-                        <!-- Detection impact visualization will be rendered here -->
-                    </div>
-                </div>
-            </section>
-            
-            <section id="data-info">
-                <h2>Data Information</h2>
-                <p>Total records: <span id="record-count"></span></p>
-                <p>Data source: National Road Safety Data Hub</p>
-            </section>
-        </main>
-        
-        <footer>
-            <p>© 2025 Data Visualisation Project Team</p>
-        </footer>
-    </div>
-    
+    <header>
+        <h1>Australian Police Positive Drug Test Analysis (2008–2024)</h1>
+        <p class="subtitle">COS30045 Data Visualisation</p>
+    </header>
+
+    <main>
+        <!-- Intro -->
+        <section class="intro">
+            <h2>Research Questions</h2>
+            <ol>
+                <li>How have positive drug test rates changed over time?</li>
+                <li>Which jurisdictions record the highest positive rates?</li>
+                <li>Which age groups show the highest drug positivity?</li>
+                <li>Which drug types appear most frequently in positive tests?</li>
+                <li>How do drug types vary across age groups?</li>
+            </ol>
+        </section>
+
+        <!-- 1: Trend over time -->
+        <section id="section1">
+            <h3>Positive Drug Rate Over Time</h3>
+            <p>This line chart shows how positive drug test results change from 2008–2024 across jurisdictions.</p>
+
+            <div class="filters">
+                <label for="trend-jurisdiction">Jurisdiction:</label>
+                <select id="trend-jurisdiction"></select>
+            </div>
+
+            <div id="trend-chart" class="chart-container"></div>
+        </section>
+
+        <!-- 2: Jurisdictions -->
+        <section id="section2">
+            <h3>Positive Drug Rates by Jurisdiction</h3>
+            <p>This horizontal bar chart compares drug positivity across different Australian jurisdictions.</p>
+
+            <div class="filters">
+                <label for="jurisdiction-year">Year:</label>
+                <select id="jurisdiction-year"></select>
+            </div>
+
+            <div id="jurisdiction-chart" class="chart-container"></div>
+        </section>
+
+        <!-- 3: Age groups -->
+        <section id="section3">
+            <h3>Positive Rate by Age Group</h3>
+            <p>This grouped bar chart shows positive drug test distribution across age groups and drug types.</p>
+
+            <div class="filters">
+                <label for="age-year">Year:</label>
+                <select id="age-year"></select>
+
+                <label for="age-drug">Drug type:</label>
+                <select id="age-drug"></select>
+            </div>
+
+            <div id="age-chart" class="chart-container"></div>
+        </section>
+
+        <!-- 4: Drug types -->
+        <section id="section4">
+            <h3>Positive Rate by Drug Type</h3>
+            <p>This bar chart compares which drug types are most commonly detected.</p>
+
+            <div class="filters">
+                <label for="drugtype-jurisdiction">Jurisdiction:</label>
+                <select id="drugtype-jurisdiction"></select>
+
+                <label for="drugtype-year">Year:</label>
+                <select id="drugtype-year"></select>
+            </div>
+
+            <div id="drugtype-chart" class="chart-container"></div>
+        </section>
+
+        <!-- 5: Stacked age × drug -->
+        <section id="section5">
+            <h3>Drug Type Distribution Across Age Groups</h3>
+            <p>This stacked bar chart visualises the distribution of drug types across different age groups.</p>
+
+            <div class="filters">
+                <label for="stacked-year">Select Year:</label>
+                <select id="stacked-year"></select>
+            </div>
+
+            <div id="stacked-chart" class="chart-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 COS30045 – Data Visualisation • Built with D3.js</p>
+    </footer>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip"></div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

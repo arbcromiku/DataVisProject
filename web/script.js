@@ -1,691 +1,586 @@
-// Load and process data for D3.js visualizations
-d3.json('processed_police_data.json').then(function(data) {
-    console.log('Data loaded successfully:', data.length, 'records');
-    
-    // Update record count in the UI
-    document.getElementById('record-count').textContent = data.length;
-    
-    // Data processing for visualizations
-    processData(data);
-}).catch(function(error) {
-    console.error('Error loading data:', error);
-    document.getElementById('chart-container').innerHTML = 
-        '<p class="error">Error loading data. Please check the console for details.</p>';
+// Global config & helpers
+
+const drugTypes = [
+    "AMPHETAMINE",
+    "CANNABIS",
+    "COCAINE",
+    "ECSTASY",
+    "METHYLAMPHETAMINE"
+];
+
+let globalData = [];
+const tooltip = d3.select("#tooltip");
+
+// Utility: get unique sorted values
+function uniqueSorted(arr) {
+    return Array.from(new Set(arr)).sort();
+}
+
+// Load & preprocess data
+
+d3.json("processed_police_data.json").then(raw => {
+    console.log("Raw data loaded:", raw.length);
+
+    // 1. Keep only confirmed positive drug tests
+    let data = raw.filter(d => d.METRIC === "positive_drug_tests");
+
+    // 2. Remove rows that explicitly say "no drugs detected"
+    data = data.filter(d => d.NO_DRUGS_DETECTED !== "Yes");
+
+    // 3. Convert drug fields (“Yes” → 1, everything else → 0)
+    data = data.map(d => {
+        drugTypes.forEach(drug => {
+            d[drug] =
+                d[drug] && d[drug].toString().toLowerCase() === "yes" ? 1 : 0;
+        });
+
+        d.YEAR = +d.YEAR;
+        d.COUNT = +d.COUNT;
+
+        return d;
+    });
+
+    console.log("Cleaned positive dataset:", data.length);
+
+    globalData = data;
+
+    initFilters(globalData);
+
+    // Initial draw
+    createTrendChart();
+    createJurisdictionChart();
+    createAgeGroupChart();
+    createDrugTypeChart();
+    createStackedDrugChart();
 });
 
-function processData(data) {
-    // Filter data to only include records with age group information (not "All ages")
-    const ageSpecificData = data.filter(d => d.AGE_GROUP !== "All ages");
-    
-    // Create visualizations for each research question
-    createAgePatternsVisualization(ageSpecificData);
-    createGeographicTrendsVisualization(data);
-    createDrugCorrelationsVisualization(data);
-    createEnforcementAnalysisVisualization(data);
-    createDetectionImpactVisualization(data);
+// Initialise dropdowns
+
+function initFilters(data) {
+    const years = uniqueSorted(data.map(d => d.YEAR));
+    const jurisdictions = uniqueSorted(data.map(d => d.JURISDICTION));
+    const ageGroups = uniqueSorted(data.map(d => d.AGE_GROUP));
+
+    // Jurisdiction filters
+    ["trend-jurisdiction", "drugtype-jurisdiction"].forEach(id => {
+        const sel = d3.select("#" + id);
+        sel.html("");
+        sel.append("option").attr("value", "All").text("All jurisdictions");
+        jurisdictions.forEach(j => {
+            sel.append("option").attr("value", j).text(j);
+        });
+    });
+
+    // Year filters
+    ["jurisdiction-year", "age-year", "drugtype-year", "stacked-year"].forEach(
+        id => {
+            const sel = d3.select("#" + id);
+            sel.html("");
+            sel.append("option").attr("value", "All").text("All years");
+            years.forEach(y => {
+                sel.append("option").attr("value", y).text(y);
+            });
+        }
+    );
+
+    // Drug type filter (for age chart)
+    const ageDrugSel = d3.select("#age-drug");
+    ageDrugSel.html("");
+    ageDrugSel.append("option").attr("value", "All").text("All drugs");
+    drugTypes.forEach(d => {
+        ageDrugSel.append("option").attr("value", d).text(d);
+    });
+
+    // Hook up change events → redraw charts
+
+    d3.select("#trend-jurisdiction").on("change", createTrendChart);
+    d3.select("#jurisdiction-year").on("change", createJurisdictionChart);
+    d3.select("#age-year").on("change", createAgeGroupChart);
+    d3.select("#age-drug").on("change", createAgeGroupChart);
+    d3.select("#drugtype-jurisdiction").on("change", createDrugTypeChart);
+    d3.select("#drugtype-year").on("change", createDrugTypeChart);
+    d3.select("#stacked-year").on("change", createStackedDrugChart);
 }
 
-// 1. Age Patterns: How do drug test rates vary across age groups, and which drugs are most prevalent in each age demographic?
-function createAgePatternsVisualization(data) {
-    const container = d3.select('#age-patterns-chart');
-    container.html('');
-    
-    // Group data by age group and sum drug types
-    const ageGroups = [...new Set(data.map(d => d.AGE_GROUP))];
-    const drugTypes = ['AMPHETAMINE', 'CANNABIS', 'COCAINE', 'ECSTASY', 'METHYLAMPHETAMINE'];
-    
-    const ageDrugData = ageGroups.map(ageGroup => {
-        const groupData = data.filter(d => d.AGE_GROUP === ageGroup);
-        const result = { ageGroup: ageGroup };
-        drugTypes.forEach(drug => {
-            result[drug] = d3.sum(groupData, d => d[drug] === 'Yes' ? 1 : 0);
+// 1. Positive Drug Rate Over Time – Line Chart
+
+function createTrendChart() {
+    const jurisdiction = d3.select("#trend-jurisdiction").property("value");
+
+    let filtered =
+        jurisdiction === "All"
+            ? globalData
+            : globalData.filter(d => d.JURISDICTION === jurisdiction);
+
+    // Aggregate by YEAR
+    const yearly = d3
+        .rollups(
+            filtered,
+            v => d3.sum(v, d => d.COUNT),
+            d => d.YEAR
+        )
+        .map(([year, total]) => ({ YEAR: year, COUNT: total }))
+        .sort((a, b) => a.YEAR - b.YEAR);
+
+    const container = d3.select("#trend-chart");
+    container.html("");
+
+    const width = 900;
+    const height = 350;
+    const margin = { top: 40, right: 40, bottom: 40, left: 60 };
+
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const x = d3
+        .scaleLinear()
+        .domain(d3.extent(yearly, d => d.YEAR))
+        .range([margin.left, width - margin.right]);
+
+    const y = d3
+        .scaleLinear()
+        .domain([0, d3.max(yearly, d => d.COUNT) || 0])
+        .nice()
+        .range([height - margin.bottom, margin.top]);
+
+    // Line
+    const line = d3
+        .line()
+        .x(d => x(d.YEAR))
+        .y(d => y(d.COUNT));
+
+    svg
+        .append("path")
+        .datum(yearly)
+        .attr("fill", "none")
+        .attr("stroke", "#2563eb")
+        .attr("stroke-width", 3)
+        .attr("d", line);
+
+    // Points
+    svg
+        .selectAll("circle.point")
+        .data(yearly)
+        .enter()
+        .append("circle")
+        .attr("class", "point")
+        .attr("cx", d => x(d.YEAR))
+        .attr("cy", d => y(d.COUNT))
+        .attr("r", 4)
+        .attr("fill", "#1d4ed8")
+        .on("mousemove", (event, d) => {
+            tooltip
+                .style("opacity", 1)
+                .html(
+                    `
+          <strong>Year:</strong> ${d.YEAR}<br>
+          <strong>Positive tests:</strong> ${d.COUNT.toLocaleString()}<br>
+          <strong>Jurisdiction:</strong> ${jurisdiction === "All" ? "All jurisdictions" : jurisdiction
+                    }
+        `
+                )
+                .style("left", event.pageX + 12 + "px")
+                .style("top", event.pageY - 28 + "px");
+        })
+        .on("mouseout", () => {
+            tooltip.style("opacity", 0);
         });
-        return result;
+
+    // Axes
+    svg
+        .append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+    svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+}
+
+// 2. Positive Drug Rates by Jurisdiction – Horizontal Bar Chart
+
+function createJurisdictionChart() {
+    const yearVal = d3.select("#jurisdiction-year").property("value");
+
+    let filtered =
+        yearVal === "All"
+            ? globalData
+            : globalData.filter(d => d.YEAR === +yearVal);
+
+    // Aggregate by jurisdiction
+    const byJurisdiction = d3
+        .rollups(
+            filtered,
+            v => d3.sum(v, d => d.COUNT),
+            d => d.JURISDICTION
+        )
+        .map(([jurisdiction, total]) => ({ JURISDICTION: jurisdiction, COUNT: total }))
+        .sort((a, b) => b.COUNT - a.COUNT);
+
+    const totalAll = d3.sum(byJurisdiction, d => d.COUNT) || 1;
+
+    const container = d3.select("#jurisdiction-chart");
+    container.html("");
+
+    const width = 900;
+    const height = 350;
+    const margin = { top: 30, right: 40, bottom: 40, left: 100 };
+
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const y = d3
+        .scaleBand()
+        .domain(byJurisdiction.map(d => d.JURISDICTION))
+        .range([margin.top, height - margin.bottom])
+        .padding(0.2);
+
+    const x = d3
+        .scaleLinear()
+        .domain([0, d3.max(byJurisdiction, d => d.COUNT) || 0])
+        .nice()
+        .range([margin.left, width - margin.right]);
+
+    const color = d3
+        .scaleLinear()
+        .domain([0, d3.max(byJurisdiction, d => d.COUNT) || 1])
+        .range(["#bfdbfe", "#1d4ed8"]);
+
+    svg
+        .selectAll("rect.bar")
+        .data(byJurisdiction)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("y", d => y(d.JURISDICTION))
+        .attr("x", x(0))
+        .attr("height", y.bandwidth())
+        .attr("width", d => x(d.COUNT) - x(0))
+        .attr("fill", d => color(d.COUNT))
+        .on("mousemove", (event, d) => {
+            const share = (d.COUNT / totalAll) * 100;
+            tooltip
+                .style("opacity", 1)
+                .html(
+                    `
+          <strong>Jurisdiction:</strong> ${d.JURISDICTION}<br>
+          <strong>Positive tests:</strong> ${d.COUNT.toLocaleString()}<br>
+          <strong>Share of total:</strong> ${share.toFixed(1)}%<br>
+          <strong>Year:</strong> ${yearVal === "All" ? "All years" : yearVal
+                    }
+        `
+                )
+                .style("left", event.pageX + 12 + "px")
+                .style("top", event.pageY - 28 + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+
+    // Axes
+    svg
+        .append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).ticks(5));
+
+    svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+}
+
+// 3. Positive Rate by Age Group – Grouped Bar Chart
+
+function createAgeGroupChart() {
+    const yearVal = d3.select("#age-year").property("value");
+    const drugVal = d3.select("#age-drug").property("value");
+
+    let filtered =
+        yearVal === "All" ? globalData : globalData.filter(d => d.YEAR === +yearVal);
+
+    // If a specific drug selected, filter to rows where that drug is present
+    if (drugVal !== "All") {
+        filtered = filtered.filter(d => d[drugVal] === 1);
+    }
+
+    // Aggregate by age group
+    const byAge = d3
+        .rollups(
+            filtered,
+            v => d3.sum(v, d => d.COUNT),
+            d => d.AGE_GROUP
+        )
+        .map(([age, total]) => ({ AGE_GROUP: age, COUNT: total }))
+        .sort((a, b) => a.AGE_GROUP.localeCompare(b.AGE_GROUP));
+
+    const container = d3.select("#age-chart");
+    container.html("");
+
+    const width = 900;
+    const height = 350;
+    const margin = { top: 30, right: 40, bottom: 60, left: 60 };
+
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const x = d3
+        .scaleBand()
+        .domain(byAge.map(d => d.AGE_GROUP))
+        .range([margin.left, width - margin.right])
+        .padding(0.2);
+
+    const y = d3
+        .scaleLinear()
+        .domain([0, d3.max(byAge, d => d.COUNT) || 0])
+        .nice()
+        .range([height - margin.bottom, margin.top]);
+
+    svg
+        .selectAll("rect.bar")
+        .data(byAge)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.AGE_GROUP))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.COUNT))
+        .attr("height", d => y(0) - y(d.COUNT))
+        .attr("fill", "#10b981")
+        .on("mousemove", (event, d) => {
+            tooltip
+                .style("opacity", 1)
+                .html(
+                    `
+          <strong>Age group:</strong> ${d.AGE_GROUP}<br>
+          <strong>Positive tests:</strong> ${d.COUNT.toLocaleString()}<br>
+          <strong>Drug filter:</strong> ${drugVal === "All" ? "All drugs" : drugVal
+                    }<br>
+          <strong>Year:</strong> ${yearVal === "All" ? "All years" : yearVal}
+        `
+                )
+                .style("left", event.pageX + 12 + "px")
+                .style("top", event.pageY - 28 + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+
+    // Axes
+    svg
+        .append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "rotate(-35)")
+        .style("text-anchor", "end");
+
+    svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+}
+
+// 4. Positive Rate by Drug Type – Vertical Bar Chart
+
+function createDrugTypeChart() {
+    const yearVal = d3.select("#drugtype-year").property("value");
+    const jurisVal = d3.select("#drugtype-jurisdiction").property("value");
+
+    let filtered = globalData;
+
+    if (yearVal !== "All") {
+        filtered = filtered.filter(d => d.YEAR === +yearVal);
+    }
+
+    if (jurisVal !== "All") {
+        filtered = filtered.filter(d => d.JURISDICTION === jurisVal);
+    }
+
+    const drugData = drugTypes.map(drug => {
+        const total = d3.sum(filtered, d => (d[drug] === 1 ? d.COUNT : 0));
+        return { DRUG: drug, COUNT: total };
     });
-    
-    // Create stacked bar chart
-    const margin = {top: 20, right: 30, bottom: 60, left: 60};
-    const width = 800 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
-    
-    const svg = container.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-    
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
-    
-    // Set up scales
-    const x = d3.scaleBand()
+
+    const container = d3.select("#drugtype-chart");
+    container.html("");
+
+    const width = 900;
+    const height = 350;
+    const margin = { top: 30, right: 40, bottom: 60, left: 60 };
+
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const x = d3
+        .scaleBand()
+        .domain(drugData.map(d => d.DRUG))
+        .range([margin.left, width - margin.right])
+        .padding(0.2);
+
+    const y = d3
+        .scaleLinear()
+        .domain([0, d3.max(drugData, d => d.COUNT) || 0])
+        .nice()
+        .range([height - margin.bottom, margin.top]);
+
+    const color = d3
+        .scaleOrdinal()
+        .domain(drugTypes)
+        .range(["#4ade80", "#22c55e", "#16a34a", "#15803d", "#166534"]);
+
+    svg
+        .selectAll("rect.bar")
+        .data(drugData)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", d => x(d.DRUG))
+        .attr("width", x.bandwidth())
+        .attr("y", d => y(d.COUNT))
+        .attr("height", d => y(0) - y(d.COUNT))
+        .attr("fill", d => color(d.DRUG))
+        .on("mousemove", (event, d) => {
+            tooltip
+                .style("opacity", 1)
+                .html(
+                    `
+          <strong>Drug:</strong> ${d.DRUG}<br>
+          <strong>Positive tests:</strong> ${d.COUNT.toLocaleString()}<br>
+          <strong>Jurisdiction:</strong> ${jurisVal === "All" ? "All jurisdictions" : jurisVal
+                    }<br>
+          <strong>Year:</strong> ${yearVal === "All" ? "All years" : yearVal}
+        `
+                )
+                .style("left", event.pageX + 12 + "px")
+                .style("top", event.pageY - 28 + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+
+    svg
+        .append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "rotate(-35)")
+        .style("text-anchor", "end");
+
+    svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+}
+
+// 5. Drug Type Distribution Across Age Groups – Stacked Bar Chart
+
+function createStackedDrugChart() {
+    const yearVal = d3.select("#stacked-year").property("value");
+
+    let filtered =
+        yearVal === "All" ? globalData : globalData.filter(d => d.YEAR === +yearVal);
+
+    // Aggregate per AGE_GROUP & drug type
+    const ageGroups = uniqueSorted(filtered.map(d => d.AGE_GROUP));
+
+    const stackedData = ageGroups.map(age => {
+        const rows = filtered.filter(d => d.AGE_GROUP === age);
+        const base = { AGE_GROUP: age };
+        drugTypes.forEach(drug => {
+            base[drug] = d3.sum(rows, d => (d[drug] === 1 ? d.COUNT : 0));
+        });
+        return base;
+    });
+
+    const container = d3.select("#stacked-chart");
+    container.html("");
+
+    const width = 900;
+    const height = 380;
+    const margin = { top: 30, right: 20, bottom: 60, left: 70 };
+
+    const svg = container
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    const x = d3
+        .scaleBand()
         .domain(ageGroups)
-        .range([0, width])
-        .padding(0.1);
-    
-    const y = d3.scaleLinear()
-        .domain([0, d3.max(ageDrugData, d => d3.sum(drugTypes, drug => d[drug]))])
-        .nice()
-        .range([height, 0]);
-    
-    const color = d3.scaleOrdinal()
-        .domain(drugTypes)
-        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']);
-    
-    // Stack the data
-    const stack = d3.stack()
-        .keys(drugTypes);
-    
-    const series = stack(ageDrugData);
-    
-    // Add bars
-    g.selectAll('g')
-        .data(series)
-        .enter().append('g')
-        .attr('fill', d => color(d.key))
-        .selectAll('rect')
-        .data(d => d)
-        .enter().append('rect')
-        .attr('x', d => x(d.data.ageGroup))
-        .attr('y', d => y(d[1]))
-        .attr('height', d => y(d[0]) - y(d[1]))
-        .attr('width', x.bandwidth());
-    
-    // Add axes
-    g.append('g')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(x))
-        .selectAll('text')
-        .attr('transform', 'rotate(-45)')
-        .style('text-anchor', 'end');
-    
-    g.append('g')
-        .call(d3.axisLeft(y));
-    
-    // Add axis labels
-    g.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('y', 0 - margin.left)
-        .attr('x', 0 - (height / 2))
-        .attr('dy', '1em')
-        .style('text-anchor', 'middle')
-        .text('Number of Positive Tests');
-    
-    g.append('text')
-        .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
-        .style('text-anchor', 'middle')
-        .text('Age Group');
-    
-    // Add legend
-    const legend = g.append('g')
-        .attr('font-family', 'sans-serif')
-        .attr('font-size', 10)
-        .attr('transform', `translate(${width - 150}, 0)`);
-    
-    const legendItems = legend.selectAll('g')
-        .data(drugTypes)
-        .enter().append('g')
-        .attr('transform', (d, i) => `translate(0, ${i * 20})`);
-    
-    legendItems.append('rect')
-        .attr('x', 0)
-        .attr('width', 19)
-        .attr('height', 19)
-        .attr('fill', color);
-    
-    legendItems.append('text')
-        .attr('x', 24)
-        .attr('y', 9.5)
-        .attr('dy', '0.35em')
-        .text(d => d);
-    
-    // Add title
-    container.insert('h4', ':first-child')
-        .text('Drug Test Rates by Age Group')
-        .style('margin-top', '0');
-}
+        .range([margin.left, width - margin.right])
+        .padding(0.2);
 
-// 2. Geographic Trends: How have drug test rates evolved over time across Australian jurisdictions?
-function createGeographicTrendsVisualization(data) {
-    const container = d3.select('#geographic-trends-chart');
-    container.html('');
-    
-    // Group data by year and jurisdiction
-    const years = [...new Set(data.map(d => d.YEAR))].sort();
-    const jurisdictions = [...new Set(data.map(d => d.JURISDICTION))];
-    
-    const geoData = jurisdictions.map(jurisdiction => {
-        const result = { jurisdiction: jurisdiction };
-        years.forEach(year => {
-            const yearData = data.filter(d => d.JURISDICTION === jurisdiction && d.YEAR === year);
-            result[year] = d3.sum(yearData, d => d.COUNT || 0);
-        });
-        return result;
-    });
-    
-    // Create line chart
-    const margin = {top: 20, right: 100, bottom: 60, left: 60};
-    const width = 800 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
-    
-    const svg = container.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-    
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
-    
-    // Set up scales
-    const x = d3.scaleLinear()
-        .domain(d3.extent(years))
-        .range([0, width]);
-    
-    const y = d3.scaleLinear()
-        .domain([0, d3.max(geoData, d => d3.max(years, year => d[year]))])
-        .nice()
-        .range([height, 0]);
-    
-    const color = d3.scaleOrdinal()
-        .domain(jurisdictions)
-        .range(d3.schemeCategory10);
-    
-    // Create lines
-    const line = d3.line()
-        .x((d, i) => x(years[i]))
-        .y(d => y(d));
-    
-    const jurisdictionLines = geoData.map(d => {
-        return {
-            jurisdiction: d.jurisdiction,
-            values: years.map(year => d[year])
-        };
-    });
-    
-    g.selectAll('.line')
-        .data(jurisdictionLines)
-        .enter().append('path')
-        .attr('class', 'line')
-        .attr('d', d => line(d.values))
-        .attr('stroke', d => color(d.jurisdiction))
-        .attr('stroke-width', 2)
-        .attr('fill', 'none');
-    
-    // Add dots
-    jurisdictionLines.forEach(jurisdictionLine => {
-        g.selectAll('.dot')
-            .data(jurisdictionLine.values)
-            .enter().append('circle')
-            .attr('cx', (d, i) => x(years[i]))
-            .attr('cy', d => y(d))
-            .attr('r', 3)
-            .attr('fill', color(jurisdictionLine.jurisdiction));
-    });
-    
-    // Add axes
-    g.append('g')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(x).tickFormat(d3.format('d')));
-    
-    g.append('g')
-        .call(d3.axisLeft(y));
-    
-    // Add axis labels
-    g.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('y', 0 - margin.left)
-        .attr('x', 0 - (height / 2))
-        .attr('dy', '1em')
-        .style('text-anchor', 'middle')
-        .text('Number of Positive Tests');
-    
-    g.append('text')
-        .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
-        .style('text-anchor', 'middle')
-        .text('Year');
-    
-    // Add legend
-    const legend = g.append('g')
-        .attr('font-family', 'sans-serif')
-        .attr('font-size', 10)
-        .attr('transform', `translate(${width + 10}, 0)`);
-    
-    const legendItems = legend.selectAll('g')
-        .data(jurisdictions)
-        .enter().append('g')
-        .attr('transform', (d, i) => `translate(0, ${i * 20})`);
-    
-    legendItems.append('rect')
-        .attr('x', 0)
-        .attr('width', 19)
-        .attr('height', 19)
-        .attr('fill', color);
-    
-    legendItems.append('text')
-        .attr('x', 24)
-        .attr('y', 9.5)
-        .attr('dy', '0.35em')
-        .text(d => d);
-    
-    // Add title
-    container.insert('h4', ':first-child')
-        .text('Drug Test Trends by Jurisdiction Over Time')
-        .style('margin-top', '0');
-}
-
-// 3. Drug Correlations: What correlations exist between different drug types in positive tests?
-function createDrugCorrelationsVisualization(data) {
-    const container = d3.select('#drug-correlations-chart');
-    container.html('');
-    
-    // Calculate correlation matrix
-    const drugTypes = ['AMPHETAMINE', 'CANNABIS', 'COCAINE', 'ECSTASY', 'METHYLAMPHETAMINE'];
-    
-    // Convert drug test results to binary values (1 for 'Yes', 0 for 'No')
-    const binaryData = data.map(d => {
-        const result = {};
-        drugTypes.forEach(drug => {
-            result[drug] = d[drug] === 'Yes' ? 1 : 0;
-        });
-        return result;
-    });
-    
-    // Calculate correlation coefficients
-    const correlations = [];
-    drugTypes.forEach((rowDrug, i) => {
-        drugTypes.forEach((colDrug, j) => {
-            if (i <= j) { // Only calculate upper triangle to avoid duplication
-                const rowValues = binaryData.map(d => d[rowDrug]);
-                const colValues = binaryData.map(d => d[colDrug]);
-                
-                // Simple correlation calculation
-                const n = rowValues.length;
-                const sumRow = d3.sum(rowValues);
-                const sumCol = d3.sum(colValues);
-                const sumRowSq = d3.sum(rowValues, d => d * d);
-                const sumColSq = d3.sum(colValues, d => d * d);
-                const sumRowCol = d3.sum(rowValues.map((d, idx) => d * colValues[idx]));
-                
-                const numerator = n * sumRowCol - sumRow * sumCol;
-                const denominator = Math.sqrt((n * sumRowSq - sumRow * sumRow) * (n * sumColSq - sumCol * sumCol));
-                
-                const correlation = denominator !== 0 ? numerator / denominator : 0;
-                
-                correlations.push({
-                    row: rowDrug,
-                    col: colDrug,
-                    value: correlation
-                });
-            }
-        });
-    });
-    
-    // Create heatmap
-    const margin = {top: 50, right: 50, bottom: 100, left: 100};
-    const width = 500 - margin.left - margin.right;
-    const height = 500 - margin.top - margin.bottom;
-    
-    const svg = container.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-    
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
-    
-    // Set up scales
-    const x = d3.scaleBand()
-        .domain(drugTypes)
-        .range([0, width])
-        .padding(0.05);
-    
-    const y = d3.scaleBand()
-        .domain(drugTypes)
-        .range([0, height])
-        .padding(0.05);
-    
-    // Color scale for correlation values (-1 to 1)
-    const color = d3.scaleSequential(d3.interpolateRdBu)
-        .domain([1, -1]); // Reverse domain to make positive correlations red and negative blue
-    
-    // Add rectangles
-    g.selectAll()
-        .data(correlations)
-        .enter()
-        .append('rect')
-        .attr('x', d => x(d.col))
-        .attr('y', d => y(d.row))
-        .attr('width', x.bandwidth())
-        .attr('height', y.bandwidth())
-        .style('fill', d => color(d.value))
-        .attr('stroke', 'white');
-    
-    // Add text labels
-    g.selectAll()
-        .data(correlations)
-        .enter()
-        .append('text')
-        .attr('x', d => x(d.col) + x.bandwidth() / 2)
-        .attr('y', d => y(d.row) + y.bandwidth() / 2)
-        .attr('dy', '.35em')
-        .attr('text-anchor', 'middle')
-        .text(d => d.value.toFixed(2))
-        .style('fill', d => Math.abs(d.value) > 0.5 ? 'white' : 'black')
-        .style('font-size', '12px');
-    
-    // Add axes
-    g.append('g')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(x))
-        .selectAll('text')
-        .style('text-anchor', 'end')
-        .attr('dx', '-.8em')
-        .attr('dy', '.15em')
-        .attr('transform', 'rotate(-45)');
-    
-    g.append('g')
-        .call(d3.axisLeft(y));
-    
-    // Add axis labels
-    g.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('y', 0 - margin.left)
-        .attr('x', 0 - (height / 2))
-        .attr('dy', '1em')
-        .style('text-anchor', 'middle')
-        .text('Drug Type');
-    
-    g.append('text')
-        .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 30})`)
-        .style('text-anchor', 'middle')
-        .text('Drug Type');
-    
-    // Add title
-    g.append('text')
-        .attr('x', width / 2)
-        .attr('y', 0 - (margin.top / 2))
-        .attr('text-anchor', 'middle')
-        .style('font-size', '16px')
-        .style('font-weight', 'bold')
-        .text('Drug Type Correlation Matrix');
-    
-    // Add color legend
-    const legendWidth = 200;
-    const legendHeight = 20;
-    const legend = g.append('g')
-        .attr('transform', `translate(${(width - legendWidth) / 2}, ${height + 40})`);
-    
-    const legendScale = d3.scaleLinear()
-        .domain([-1, 1])
-        .range([0, legendWidth]);
-    
-    const legendAxis = d3.axisBottom(legendScale)
-        .ticks(5)
-        .tickFormat(d3.format('.1f'));
-    
-    const legendGradient = legend.append('defs')
-        .append('linearGradient')
-        .attr('id', 'legend-gradient')
-        .attr('x1', '0%')
-        .attr('y1', '0%')
-        .attr('x2', '100%')
-        .attr('y2', '0%');
-    
-    legendGradient.append('stop')
-        .attr('offset', '0%')
-        .attr('stop-color', color(-1));
-    
-    legendGradient.append('stop')
-        .attr('offset', '50%')
-        .attr('stop-color', color(0));
-    
-    legendGradient.append('stop')
-        .attr('offset', '100%')
-        .attr('stop-color', color(1));
-    
-    legend.append('rect')
-        .attr('width', legendWidth)
-        .attr('height', legendHeight)
-        .style('fill', 'url(#legend-gradient)');
-    
-    legend.append('g')
-        .attr('transform', `translate(0, ${legendHeight})`)
-        .call(legendAxis);
-    
-    // Add legend label
-    legend.append('text')
-        .attr('transform', `translate(${legendWidth / 2}, ${legendHeight + 30})`)
-        .style('text-anchor', 'middle')
-        .text('Correlation Coefficient');
-    
-    // Add title
-    container.insert('h4', ':first-child')
-        .text('Correlation Between Drug Types in Positive Tests')
-        .style('margin-top', '0');
-}
-
-// 4. Enforcement Analysis: Relationship between positive drug tests and enforcement outcomes
-function createEnforcementAnalysisVisualization(data) {
-    const container = d3.select('#enforcement-analysis-chart');
-    container.html('');
-    
-    // Group data by jurisdiction and sum enforcement outcomes
-    const jurisdictions = [...new Set(data.map(d => d.JURISDICTION))];
-    
-    const enforcementData = jurisdictions.map(jurisdiction => {
-        const groupData = data.filter(d => d.JURISDICTION === jurisdiction);
-        return {
-            jurisdiction: jurisdiction,
-            positiveTests: d3.sum(groupData, d => d.COUNT || 0),
-            fines: d3.sum(groupData, d => d.FINES || 0),
-            arrests: d3.sum(groupData, d => d.ARRESTS || 0),
-            charges: d3.sum(groupData, d => d.CHARGES || 0)
-        };
-    });
-    
-    // Create grouped bar chart
-    const margin = {top: 20, right: 30, bottom: 100, left: 60};
-    const width = 800 - margin.left - margin.right;
-    const height = 400 - margin.top - margin.bottom;
-    
-    const svg = container.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-    
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
-    
-    // Set up scales
-    const x0 = d3.scaleBand()
-        .domain(jurisdictions)
-        .range([0, width])
-        .padding(0.1);
-    
-    const x1 = d3.scaleBand()
-        .domain(['positiveTests', 'fines', 'arrests', 'charges'])
-        .range([0, x0.bandwidth()])
-        .padding(0.05);
-    
-    const y = d3.scaleLinear()
-        .domain([0, d3.max(enforcementData, d => Math.max(d.positiveTests, d.fines, d.arrests, d.charges))])
-        .nice()
-        .range([height, 0]);
-    
-    const color = d3.scaleOrdinal()
-        .domain(['positiveTests', 'fines', 'arrests', 'charges'])
-        .range(['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']);
-    
-    // Add bars
-    g.append('g')
-        .selectAll('g')
-        .data(enforcementData)
-        .enter().append('g')
-        .attr('transform', d => `translate(${x0(d.jurisdiction)},0)`)
-        .selectAll('rect')
-        .data(d => [
-            {name: 'positiveTests', value: d.positiveTests},
-            {name: 'fines', value: d.fines},
-            {name: 'arrests', value: d.arrests},
-            {name: 'charges', value: d.charges}
+    const y = d3
+        .scaleLinear()
+        .domain([
+            0,
+            d3.max(stackedData, d =>
+                d3.sum(drugTypes, drug => d[drug] || 0)
+            ) || 0
         ])
-        .enter().append('rect')
-        .attr('x', d => x1(d.name))
-        .attr('y', d => y(d.value))
-        .attr('width', x1.bandwidth())
-        .attr('height', d => height - y(d.value))
-        .attr('fill', d => color(d.name));
-    
-    // Add axes
-    g.append('g')
-        .attr('transform', `translate(0,${height})`)
-        .call(d3.axisBottom(x0))
-        .selectAll('text')
-        .attr('transform', 'rotate(-45)')
-        .style('text-anchor', 'end');
-    
-    g.append('g')
-        .call(d3.axisLeft(y));
-    
-    // Add axis labels
-    g.append('text')
-        .attr('transform', 'rotate(-90)')
-        .attr('y', 0 - margin.left)
-        .attr('x', 0 - (height / 2))
-        .attr('dy', '1em')
-        .style('text-anchor', 'middle')
-        .text('Count');
-    
-    g.append('text')
-        .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 30})`)
-        .style('text-anchor', 'middle')
-        .text('Jurisdiction');
-    
-    // Add legend
-    const legend = g.append('g')
-        .attr('font-family', 'sans-serif')
-        .attr('font-size', 10)
-        .attr('transform', `translate(${width - 180}, 0)`);
-    
-    const legendItems = legend.selectAll('g')
-        .data(['positiveTests', 'fines', 'arrests', 'charges'])
-        .enter().append('g')
-        .attr('transform', (d, i) => `translate(0, ${i * 20})`);
-    
-    legendItems.append('rect')
-        .attr('x', 0)
-        .attr('width', 19)
-        .attr('height', 19)
-        .attr('fill', color);
-    
-    legendItems.append('text')
-        .attr('x', 24)
-        .attr('y', 9.5)
-        .attr('dy', '0.35em')
-        .text(d => {
-            switch(d) {
-                case 'positiveTests': return 'Positive Tests';
-                case 'fines': return 'Fines';
-                case 'arrests': return 'Arrests';
-                case 'charges': return 'Charges';
-                default: return d;
-            }
-        });
-    
-    // Add title
-    container.insert('h4', ':first-child')
-        .text('Enforcement Outcomes by Jurisdiction')
-        .style('margin-top', '0');
-}
-
-// 5. Detection Impact: How do different detection methods affect accuracy and outcomes?
-function createDetectionImpactVisualization(data) {
-    const container = d3.select('#detection-impact-chart');
-    container.html('');
-    
-    // Filter data to only include records with detection method information
-    const detectionData = data.filter(d => d.DETECTION_METHOD && d.DETECTION_METHOD !== '');
-    
-    // Group data by detection method
-    const detectionMethods = [...new Set(detectionData.map(d => d.DETECTION_METHOD))];
-    
-    const methodData = detectionMethods.map(method => {
-        const groupData = detectionData.filter(d => d.DETECTION_METHOD === method);
-        return {
-            method: method,
-            count: groupData.length,
-            avgPositiveRate: d3.mean(groupData, d => d.COUNT || 0),
-            bestDetection: d3.sum(groupData, d => d.BEST_DETECTION_METHOD === 'Yes' ? 1 : 0)
-        };
-    });
-    
-    // Create horizontal bar chart for detection method counts
-    const margin = {top: 20, right: 150, bottom: 60, left: 150};
-    const width = 800 - margin.left - margin.right;
-    const height = 300 - margin.top - margin.bottom;
-    
-    const svg = container.append('svg')
-        .attr('width', width + margin.left + margin.right)
-        .attr('height', height + margin.top + margin.bottom);
-    
-    const g = svg.append('g')
-        .attr('transform', `translate(${margin.left},${margin.top})`);
-    
-    // Set up scales
-    const x = d3.scaleLinear()
-        .domain([0, d3.max(methodData, d => d.count)])
         .nice()
-        .range([0, width]);
-    
-    const y = d3.scaleBand()
-        .domain(methodData.map(d => d.method))
-        .range([0, height])
-        .padding(0.1);
-    
-    // Add bars
-    g.selectAll('.bar')
-        .data(methodData)
-        .enter().append('rect')
-        .attr('class', 'bar')
-        .attr('x', 0)
-        .attr('y', d => y(d.method))
-        .attr('width', d => x(d.count))
-        .attr('height', y.bandwidth())
-        .attr('fill', '#1f77b4');
-    
-    // Add value labels
-    g.selectAll('.label')
-        .data(methodData)
-        .enter().append('text')
-        .attr('class', 'label')
-        .attr('x', d => x(d.count) + 5)
-        .attr('y', d => y(d.method) + y.bandwidth() / 2)
-        .attr('dy', '0.35em')
-        .text(d => d.count);
-    
-    // Add axes
-    g.append('g')
-        .attr('class', 'x-axis')
-        .call(d3.axisTop(x));
-    
-    g.append('g')
-        .attr('class', 'y-axis')
+        .range([height - margin.bottom, margin.top]);
+
+    const color = d3
+        .scaleOrdinal()
+        .domain(drugTypes)
+        .range(["#38bdf8", "#6366f1", "#ec4899", "#f97316", "#22c55e"]);
+
+    const stack = d3.stack().keys(drugTypes);
+    const series = stack(stackedData);
+
+    // Draw stacks
+    svg
+        .selectAll("g.layer")
+        .data(series)
+        .enter()
+        .append("g")
+        .attr("class", "layer")
+        .attr("fill", d => color(d.key))
+        .selectAll("rect")
+        .data(d => d)
+        .enter()
+        .append("rect")
+        .attr("x", d => x(d.data.AGE_GROUP))
+        .attr("y", d => y(d[1]))
+        .attr("height", d => y(d[0]) - y(d[1]))
+        .attr("width", x.bandwidth())
+        .on("mousemove", (event, d) => {
+            const drug = event.currentTarget.parentNode.__data__.key;
+            const totalAge = d3.sum(drugTypes, k => d.data[k] || 0);
+            const value = d.data[drug] || 0;
+            const pct = totalAge ? (value / totalAge) * 100 : 0;
+
+            tooltip
+                .style("opacity", 1)
+                .html(
+                    `
+          <strong>Age group:</strong> ${d.data.AGE_GROUP}<br>
+          <strong>Drug:</strong> ${drug}<br>
+          <strong>Positive tests:</strong> ${value.toLocaleString()}<br>
+          <strong>Share within age group:</strong> ${pct.toFixed(1)}%<br>
+          <strong>Year:</strong> ${yearVal === "All" ? "All years" : yearVal}
+        `
+                )
+                .style("left", event.pageX + 12 + "px")
+                .style("top", event.pageY - 28 + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+
+    // Axes
+    svg
+        .append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+        .attr("transform", "rotate(-35)")
+        .style("text-anchor", "end");
+
+    svg
+        .append("g")
+        .attr("transform", `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
-    
-    // Add axis labels
-    g.append('text')
-        .attr('transform', `translate(${width / 2}, ${0 - margin.top + 10})`)
-        .style('text-anchor', 'middle')
-        .text('Number of Tests');
-    
-    g.append('text')
-        .attr('transform', `translate(${-margin.left + 20}, ${height / 2}) rotate(-90)`)
-        .style('text-anchor', 'middle')
-        .text('Detection Method');
-    
-    // Add title
-    container.insert('h4', ':first-child')
-        .text('Distribution of Detection Methods')
-        .style('margin-top', '0');
-    
-    // Add additional information
-    container.append('p')
-        .text('Note: This visualization shows the distribution of different detection methods used in drug testing.')
-        .style('font-style', 'italic')
-        .style('margin-top', '10px');
 }
