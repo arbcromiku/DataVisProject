@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Enforcement Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Police Enforcement - Positive Drug Tests (2008-2024)</h1>
+            <p>Data visualization project for COS30045 Data Visualisation</p>
+        </header>
+        
+        <main>
+            <section id="introduction">
+                <h2>Research Questions</h2>
+                <ol>
+                    <li><strong>Age Patterns</strong>: How do drug test rates vary across age groups, and which drugs are most prevalent in each age demographic?</li>
+                    <li><strong>Geographic Trends</strong>: How have drug test rates evolved over time across Australian jurisdictions, and are there regional patterns in drug type prevalence?</li>
+                    <li><strong>Drug Correlations</strong>: What correlations exist between different drug types in positive tests, and how do these patterns vary by age and location?</li>
+                    <li><strong>Enforcement Analysis</strong>: What's the relationship between positive drug tests and enforcement outcomes (fines, arrests, charges), and how do these vary by drug type and jurisdiction?</li>
+                    <li><strong>Detection Impact</strong>: How do different detection methods affect accuracy and outcomes of drug testing, and what are the implications for understanding true drug usage patterns?</li>
+                </ol>
+            </section>
+            
+            <section id="visualization">
+                <h2>Data Visualizations</h2>
+                
+                <div class="research-question">
+                    <h3>1. Age Patterns Analysis</h3>
+                    <div id="age-patterns-chart" class="chart-container">
+                        <!-- Age patterns visualization will be rendered here -->
+                    </div>
+                </div>
+                
+                <div class="research-question">
+                    <h3>2. Geographic Trends Over Time</h3>
+                    <div id="geographic-trends-chart" class="chart-container">
+                        <!-- Geographic trends visualization will be rendered here -->
+                    </div>
+                </div>
+                
+                <div class="research-question">
+                    <h3>3. Drug Type Correlations</h3>
+                    <div id="drug-correlations-chart" class="chart-container">
+                        <!-- Drug correlations visualization will be rendered here -->
+                    </div>
+                </div>
+                
+                <div class="research-question">
+                    <h3>4. Enforcement Outcomes Analysis</h3>
+                    <div id="enforcement-analysis-chart" class="chart-container">
+                        <!-- Enforcement analysis visualization will be rendered here -->
+                    </div>
+                </div>
+                
+                <div class="research-question">
+                    <h3>5. Detection Method Impact</h3>
+                    <div id="detection-impact-chart" class="chart-container">
+                        <!-- Detection impact visualization will be rendered here -->
+                    </div>
+                </div>
+            </section>
+            
+            <section id="data-info">
+                <h2>Data Information</h2>
+                <p>Total records: <span id="record-count"></span></p>
+                <p>Data source: National Road Safety Data Hub</p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 Data Visualisation Project Team</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
