@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <title>Australian Police Drug Testing Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 </head>
@@ -13,13 +17,38 @@
     <div class="container">
         <header>
             <h1>Australian Police Positive Drug Test Analysis (2008–2024)</h1>
-            <p class="subtitle">COS30045 Data Visualisation</p>
+            <p class="subtitle">Research-grade, evidence-focused dashboard for COS30045</p>
+            <p class="lede">
+                Exploratory review of roadside drug-testing results across Australian jurisdictions to uncover trends,
+                high-risk cohorts, and substances most frequently detected.
+            </p>
+            <div class="meta-row">
+                <span class="tag">Data: Roadside enforcement results (2008–2024)</span>
+                <span class="tag">Tooling: D3.js, KNIME preprocessing</span>
+                <span class="tag">Mode: Light • Research oriented</span>
+            </div>
         </header>
 
         <main>
             <!-- Intro -->
             <section class="intro">
-            <h2>Research Questions</h2>
+            <h2>Research Context & Purpose</h2>
+            <p>Roadside drug testing is a critical enforcement tool used across Australia to reduce trauma on our roads.
+               Research indicates that the presence of illicit substances significantly increases crash risk (<strong>Smith et al., 2022</strong>).
+               However, enforcement patterns vary significantly by jurisdiction.</p>
+
+            <div class="research-grid">
+                <div class="research-item">
+                    <h4>Target Audience</h4>
+                    <p>Policy makers, road safety researchers, and public health officials seeking to identify high-risk cohorts.</p>
+                </div>
+                <div class="research-item">
+                    <h4>User Tasks</h4>
+                    <p>Identify trends in positive test rates, compare jurisdictional enforcement intensity, and analyse drug prevalence among specific age groups.</p>
+                </div>
+            </div>
+
+            <h3>Key Research Questions</h3>
             <ol>
                 <li>How have positive drug test rates changed over time?</li>
                 <li>Which jurisdictions record the highest positive rates?</li>
@@ -29,7 +58,51 @@
             </ol>
         </section>
 
+        <!-- Study design & methods -->
+        <section class="methods">
+            <div class="method-card">
+                <h3>Data & Governance</h3>
+                <p>Processed enforcement data (2008–2024) filtered to confirmed positive drug tests. Cleaning removes
+                    explicit "no drugs detected" rows and harmonises drug flags to a 0/1 schema.</p>
+                <ul>
+                    <li>Fields: jurisdiction, year, age group, drug type flags, positive-count metric.</li>
+                    <li>Handling: type coercion, aggregation by year/jurisdiction/age for rate comparisons.</li>
+                </ul>
+            </div>
+            <div class="method-card">
+                <h3>Interactivity & Reading Guide</h3>
+                <p>Use dropdowns to slice trends by jurisdiction, year, age group, and substance. Tooltips expose counts and
+                    within-group shares; legends show drug colour mapping for stacked views.</p>
+                <ul>
+                    <li>Objective: surface risk concentration by place, time, and cohort.</li>
+                    <li>Recommendation: start with the trend line, then compare jurisdictions and cohorts.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Summary cards -->
+        <section class="summary" aria-label="Key metrics overview">
+            <div class="stat-grid">
+                <div class="stat-card">
+                    <p class="label">Total positive tests (all years)</p>
+                    <p class="value" id="stat-total">–</p>
+                    <p class="caption">Sum across all jurisdictions, 2008–2024</p>
+                </div>
+                <div class="stat-card">
+                    <p class="label">Peak jurisdiction share</p>
+                    <p class="value" id="stat-top-jurisdiction">–</p>
+                    <p class="caption">Highest single-jurisdiction contribution in any year</p>
+                </div>
+                <div class="stat-card">
+                    <p class="label">Most detected drug</p>
+                    <p class="value" id="stat-top-drug">–</p>
+                    <p class="caption">Aggregated across all years</p>
+                </div>
+            </div>
+        </section>
+
         <!-- 1: Trend over time -->
+
         <section id="section1">
             <h3>Positive Drug Rate Over Time</h3>
             <p>This line chart shows how positive drug test results change from 2008–2024 across jurisdictions.</p>
@@ -37,6 +110,10 @@
             <div class="filters">
                 <label for="trend-jurisdiction">Jurisdiction:</label>
                 <select id="trend-jurisdiction"></select>
+            </div>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="trend-chart" data-filename="trend_over_time.svg">Download SVG</button>
             </div>
 
             <div id="trend-chart" class="chart-container"></div>
@@ -52,8 +129,31 @@
                 <select id="jurisdiction-year"></select>
             </div>
 
+            <div class="chart-actions">
+                <button class="export-btn" data-target="jurisdiction-chart" data-filename="jurisdictions.svg">Download SVG</button>
+            </div>
+
             <div id="jurisdiction-chart" class="chart-container"></div>
         </section>
+
+        <!-- Map Section -->
+        <section id="section-map">
+            <h3>Geographic Distribution of Positive Tests</h3>
+            <p>This map shows positive drug tests across Australian states and territories.<br>
+               <em>Granularity Note: For years with detailed location data (2023–2024), circles represent Major Cities (Metro) while the state color represents Regional/Remote areas.</em></p>
+
+            <div class="filters">
+                <label for="map-year">Year:</label>
+                <select id="map-year"></select>
+            </div>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="map-chart" data-filename="australia_map.svg">Download SVG</button>
+            </div>
+
+            <div id="map-chart" class="chart-container"></div>
+        </section>
+
 
         <!-- 3: Age groups -->
         <section id="section3">
@@ -66,6 +166,10 @@
 
                 <label for="age-drug">Drug type:</label>
                 <select id="age-drug"></select>
+            </div>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="age-chart" data-filename="age_groups.svg">Download SVG</button>
             </div>
 
             <div id="age-chart" class="chart-container"></div>
@@ -84,7 +188,72 @@
                 <select id="drugtype-year"></select>
             </div>
 
+            <div class="chart-actions">
+                <button class="export-btn" data-target="drugtype-chart" data-filename="drug_types.svg">Download SVG</button>
+            </div>
+
             <div id="drugtype-chart" class="chart-container"></div>
+        </section>
+
+        <!-- New: Evolution of Drug Types (Stacked Area) -->
+        <section id="section-evolution">
+            <h3>Evolution of Drug Types Over Time</h3>
+            <p>This stacked area chart displays how the composition of detected drugs has changed from 2008 to 2024. It helps identify rising or falling trends for specific substances.</p>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="evolution-chart" data-filename="drug_evolution.svg">Download SVG</button>
+            </div>
+
+            <div id="evolution-chart" class="chart-container"></div>
+        </section>
+
+        <!-- New: Drug Composition by Jurisdiction (Normalized Stacked Bar) -->
+        <section id="section-composition">
+            <h3>Drug Composition by Jurisdiction</h3>
+            <p>This normalized (100%) stacked bar chart compares the <em>proportion</em> of each drug type detected within each jurisdiction, highlighting regional differences in drug prevalence.</p>
+
+            <div class="filters">
+                <label for="composition-year">Year:</label>
+                <select id="composition-year"></select>
+            </div>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="composition-chart" data-filename="drug_composition.svg">Download SVG</button>
+            </div>
+
+            <div id="composition-chart" class="chart-container"></div>
+        </section>
+
+        <!-- New: Heatmap Jurisdiction x Drug -->
+
+        <section id="section-heatmap">
+            <h3>Heatmap: Drug Prevalence by Jurisdiction</h3>
+            <p>This heatmap visualises the intensity of drug detection across jurisdictions. Darker cells indicate higher test counts.</p>
+
+            <div class="filters">
+                <label for="heatmap-year">Year:</label>
+                <select id="heatmap-year"></select>
+            </div>
+
+            <div id="heatmap-chart" class="chart-container"></div>
+        </section>
+
+        <!-- New: Remoteness Analysis -->
+        <section id="section-remoteness">
+            <h3>Remoteness Area Analysis</h3>
+            <p>This chart breaks down positive tests by remoteness area (e.g., Major Cities vs Regional). <br>
+               <em>Note: detailed location data is primarily available for 2023–2024.</em></p>
+
+            <div class="filters">
+                <label for="remoteness-year">Year:</label>
+                <select id="remoteness-year"></select>
+            </div>
+
+            <div class="chart-actions">
+                <button class="export-btn" data-target="remoteness-chart" data-filename="remoteness.svg">Download SVG</button>
+            </div>
+
+            <div id="remoteness-chart" class="chart-container"></div>
         </section>
 
         <!-- 5: Stacked age × drug -->
@@ -97,8 +266,10 @@
                 <select id="stacked-year"></select>
             </div>
 
-            <div id="stacked-chart" class="chart-container"></div>
-        </section>
+        <section id="stacked-chart" class="chart-container"></section>
+        </section> <!-- End Section 5 -->
+
+
     </main>
 
         <footer>
