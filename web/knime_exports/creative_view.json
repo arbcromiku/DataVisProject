@@ -1,0 +1,1010 @@
+[
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "NSW",
+    "COUNT": 542,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "QLD",
+    "COUNT": 216,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "SA",
+    "COUNT": 600,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "TAS",
+    "COUNT": 211,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "VIC",
+    "COUNT": 438,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2008,
+    "JURISDICTION": "WA",
+    "COUNT": 406,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "NSW",
+    "COUNT": 613,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "QLD",
+    "COUNT": 254,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "SA",
+    "COUNT": 1179,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "TAS",
+    "COUNT": 252,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "VIC",
+    "COUNT": 323,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2009,
+    "JURISDICTION": "WA",
+    "COUNT": 289,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2010,
+    "JURISDICTION": "NSW",
+    "COUNT": 735,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2010,
+    "JURISDICTION": "QLD",
+    "COUNT": 440,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2010,
+    "JURISDICTION": "SA",
+    "COUNT": 1699,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2010,
+    "JURISDICTION": "VIC",
+    "COUNT": 741,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2010,
+    "JURISDICTION": "WA",
+    "COUNT": 418,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "NSW",
+    "COUNT": 666,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "QLD",
+    "COUNT": 825,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "SA",
+    "COUNT": 2320,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "TAS",
+    "COUNT": 573,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "VIC",
+    "COUNT": 760,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2011,
+    "JURISDICTION": "WA",
+    "COUNT": 460,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "ACT",
+    "COUNT": 37,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "NSW",
+    "COUNT": 705,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "QLD",
+    "COUNT": 937,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "SA",
+    "COUNT": 3237,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "TAS",
+    "COUNT": 523,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "VIC",
+    "COUNT": 2180,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2012,
+    "JURISDICTION": "WA",
+    "COUNT": 623,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "ACT",
+    "COUNT": 116,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "NSW",
+    "COUNT": 898,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "NT",
+    "COUNT": 84,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "QLD",
+    "COUNT": 1300,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "SA",
+    "COUNT": 3737,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "TAS",
+    "COUNT": 639,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "VIC",
+    "COUNT": 2540,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2013,
+    "JURISDICTION": "WA",
+    "COUNT": 539,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "ACT",
+    "COUNT": 392,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "NSW",
+    "COUNT": 2096,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "NT",
+    "COUNT": 90,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "QLD",
+    "COUNT": 2208,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "SA",
+    "COUNT": 4681,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "TAS",
+    "COUNT": 1969,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "VIC",
+    "COUNT": 3749,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2014,
+    "JURISDICTION": "WA",
+    "COUNT": 1104,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "ACT",
+    "COUNT": 258,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "NSW",
+    "COUNT": 9123,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "NT",
+    "COUNT": 120,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "QLD",
+    "COUNT": 7446,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "SA",
+    "COUNT": 5239,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "TAS",
+    "COUNT": 2318,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "VIC",
+    "COUNT": 7823,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2015,
+    "JURISDICTION": "WA",
+    "COUNT": 2816,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "ACT",
+    "COUNT": 444,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "NSW",
+    "COUNT": 8220,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "NT",
+    "COUNT": 196,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "QLD",
+    "COUNT": 10663,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "SA",
+    "COUNT": 4310,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "TAS",
+    "COUNT": 2154,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "VIC",
+    "COUNT": 9065,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2016,
+    "JURISDICTION": "WA",
+    "COUNT": 3651,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "ACT",
+    "COUNT": 504,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "NSW",
+    "COUNT": 9273,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "NT",
+    "COUNT": 329,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "QLD",
+    "COUNT": 11697,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "SA",
+    "COUNT": 4337,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "TAS",
+    "COUNT": 2152,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "VIC",
+    "COUNT": 8252,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2017,
+    "JURISDICTION": "WA",
+    "COUNT": 3311,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "ACT",
+    "COUNT": 877,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "NSW",
+    "COUNT": 9067,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "NT",
+    "COUNT": 341,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "QLD",
+    "COUNT": 14020,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "SA",
+    "COUNT": 5141,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "TAS",
+    "COUNT": 2408,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "VIC",
+    "COUNT": 11548,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2018,
+    "JURISDICTION": "WA",
+    "COUNT": 4814,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "ACT",
+    "COUNT": 852,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "NSW",
+    "COUNT": 9446,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "NT",
+    "COUNT": 462,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "QLD",
+    "COUNT": 13366,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "SA",
+    "COUNT": 4985,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "TAS",
+    "COUNT": 2487,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "VIC",
+    "COUNT": 11693,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2019,
+    "JURISDICTION": "WA",
+    "COUNT": 5175,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "ACT",
+    "COUNT": 834,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "NSW",
+    "COUNT": 12652,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "NT",
+    "COUNT": 372,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "QLD",
+    "COUNT": 8871,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "SA",
+    "COUNT": 5728,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "TAS",
+    "COUNT": 3273,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "VIC",
+    "COUNT": 10256,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2020,
+    "JURISDICTION": "WA",
+    "COUNT": 4919,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "ACT",
+    "COUNT": 461,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "NSW",
+    "COUNT": 16997,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "NT",
+    "COUNT": 273,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "QLD",
+    "COUNT": 9847,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "SA",
+    "COUNT": 4226,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "TAS",
+    "COUNT": 2618,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "VIC",
+    "COUNT": 9717,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2021,
+    "JURISDICTION": "WA",
+    "COUNT": 5326,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "ACT",
+    "COUNT": 390,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "NSW",
+    "COUNT": 9527,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "NT",
+    "COUNT": 181,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "QLD",
+    "COUNT": 12064,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "SA",
+    "COUNT": 5607,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "TAS",
+    "COUNT": 2209,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "VIC",
+    "COUNT": 10628,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2022,
+    "JURISDICTION": "WA",
+    "COUNT": 6262,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "ACT",
+    "COUNT": 203,
+    "FINES": 0,
+    "ARRESTS": 42,
+    "CHARGES": 203
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "NSW",
+    "COUNT": 40551,
+    "FINES": 13005,
+    "ARRESTS": 0,
+    "CHARGES": 27546
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "NT",
+    "COUNT": 573,
+    "FINES": 573,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "QLD",
+    "COUNT": 11853,
+    "FINES": 0,
+    "ARRESTS": 27,
+    "CHARGES": 11853
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "SA",
+    "COUNT": 4826,
+    "FINES": 3254,
+    "ARRESTS": 152,
+    "CHARGES": 1842
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "TAS",
+    "COUNT": 2223,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "VIC",
+    "COUNT": 8813,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2023,
+    "JURISDICTION": "WA",
+    "COUNT": 16992,
+    "FINES": 0,
+    "ARRESTS": 16,
+    "CHARGES": 5506
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "ACT",
+    "COUNT": 227,
+    "FINES": 0,
+    "ARRESTS": 36,
+    "CHARGES": 227
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "NSW",
+    "COUNT": 38774,
+    "FINES": 14600,
+    "ARRESTS": 0,
+    "CHARGES": 24174
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "NT",
+    "COUNT": 2980,
+    "FINES": 780,
+    "ARRESTS": 524,
+    "CHARGES": 2200
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "QLD",
+    "COUNT": 12063,
+    "FINES": 0,
+    "ARRESTS": 34,
+    "CHARGES": 12063
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "SA",
+    "COUNT": 4790,
+    "FINES": 3101,
+    "ARRESTS": 120,
+    "CHARGES": 1879
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "TAS",
+    "COUNT": 2787,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "VIC",
+    "COUNT": 5376,
+    "FINES": 0,
+    "ARRESTS": 0,
+    "CHARGES": 0
+  },
+  {
+    "YEAR": 2024,
+    "JURISDICTION": "WA",
+    "COUNT": 20933,
+    "FINES": 0,
+    "ARRESTS": 9,
+    "CHARGES": 6709
+  }
+]
