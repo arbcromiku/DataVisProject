@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img">
+<text x='370.0' y='30' font-size='18' font-weight='600' fill='#111827' text-anchor='middle'>Positive Tests by Drug Type (All Years)</text>
+<text transform='translate(24,200.0) rotate(-90)' font-size='13' fill='#4b5563' text-anchor='middle'>Positive tests</text>
+<rect x='80' y='80.0' width='70' height='240.0' fill='#10b981' rx='4'/>
+<text x='115' y='340' font-size='12' fill='#374151' text-anchor='middle'>AMPHETAMINE</text>
+<text x='115' y='74.0' font-size='12' fill='#4b5563' text-anchor='middle'>82,550</text>
+<rect x='200' y='131.4' width='70' height='188.6' fill='#10b981' rx='4'/>
+<text x='235' y='340' font-size='12' fill='#374151' text-anchor='middle'>CANNABIS</text>
+<text x='235' y='125.4' font-size='12' fill='#4b5563' text-anchor='middle'>64,859</text>
+<rect x='320' y='292.2' width='70' height='27.8' fill='#10b981' rx='4'/>
+<text x='355' y='340' font-size='12' fill='#374151' text-anchor='middle'>COCAINE</text>
+<text x='355' y='286.2' font-size='12' fill='#4b5563' text-anchor='middle'>9,570</text>
+<rect x='440' y='301.5' width='70' height='18.5' fill='#10b981' rx='4'/>
+<text x='475' y='340' font-size='12' fill='#374151' text-anchor='middle'>METHYLAMPHETAMINE</text>
+<text x='475' y='295.5' font-size='12' fill='#4b5563' text-anchor='middle'>6,352</text>
+<rect x='560' y='313.3' width='70' height='6.7' fill='#10b981' rx='4'/>
+<text x='595' y='340' font-size='12' fill='#374151' text-anchor='middle'>ECSTASY</text>
+<text x='595' y='307.3' font-size='12' fill='#4b5563' text-anchor='middle'>2,291</text>
+</svg>

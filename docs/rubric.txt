@@ -1,0 +1,298 @@
+
+Skip to content
+SHAMIL HAQEEM BIN SHUKARMIN
+Account
+Dashboard
+Courses
+Groups
+Calendar
+Inbox
+History
+2 unread release notes.2
+Help
+COS30045AssignmentsData Visualisation Project Design Book and Website (team)
+Home
+Announcements
+Syllabus
+Modules
+Discussions
+Grades
+People
+Library
+Successful Students' Guidelines
+Lucid (Whiteboard)
+1Student Course Evaluations
+Data Visualisation Project Design Book and Website (team)
+Due 5 Dec by 23:59 Points 56 Submitting a file upload File types pdf and zip Available after 2 Sep at 0:00
+Purpose
+The purpose of this submission is to demonstrate that you and your team can develop an interactive data visualisation for the Data Visualisation Project that meets user needs.
+
+The submission consists of two parts:
+
+Design Book (evidence of data processing and your design process)
+Website containing interactive data visualisation
+Your Project must satisfy the brief provided in: Project Topic
+
+This is a team deliverable worth 45% of your final mark.
+
+Teams will be formed in Week 7 of the semester.
+
+Students will be required to work on their own if they:
+
+have NOT made an effort to be placed in a team before Week 9,
+have NOT meaningfully communicated with their team before Week 9 Class, or
+have NOT contributed to teamwork before Week 10 Stand-up.
+Submission Requirements
+File 1: Design Book
+
+Format: Written Assignment (see template)
+
+Word Limit:  None
+
+Filetype: PDF
+
+File 2: Data Processing
+
+Format: KNWF (KNIME file - file name must include team name, file must include data)
+
+Links
+
+Item: Link to website hosted on Vercel with charts programmed in D3.
+
+Item: Link to project GitHub site.
+
+Links MUST be posted in comment section of submission.
+
+Resubmission: Not permitted
+
+Academic Integrity
+See: Academic Integrity
+
+IN ADDITION - You must submit work in progress for each Stand-up.
+
+That is, you must:
+
+submit expected milestones for Stand-Ups,
+demonstrate understanding of work submitted for Stand-Up
+Students who achieve two or more fail marks on the Project Stand-Ups may have their mark reduced relative to the achieved mark.
+
+Lack of continuity between final Project and works submitted for stand-ups may result in an integrity investigation and/or a reduction in your Project mark relative to achieved mark.
+
+Teamwork
+
+Non-contribution to a team assessment is considered a matter of Academic Integrity.
+
+Students who are rated poorly by their team mates, or are otherwise identified as not fully participating in the Project, may have their mark reduced relative to the achieved mark.
+
+Extensions and Late Penalties
+See: Extensions and Late Penalty Policy
+
+Rubric
+Data Vis Project
+Data Vis Project
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcomeIntroduction and Purpose
+4 to >3.5 Pts
+HD
+Clearly defines the audience, motivation, and purpose. Identifies key user tasks and benefits. Well-structured and insightful. Includes good use of academic research to support analysis context.
+3.5 to >3.0 Pts
+D
+Defines audience and purpose well but lacks depth in providing context for user tasks or motivation.
+3 to >2.5 Pts
+C
+Provides a general overview but lacks specificity in user needs or visualisation benefits.
+2.5 to >2.0 Pts
+P
+Mentions audience and purpose briefly but lacks clarity.
+2 to >0 Pts
+Needs improvement
+Unclear or missing introduction.
+4 pts
+This criterion is linked to a learning outcomeData Processing and Governance
+5 to >4.0 Pts
+HD
+Thoroughly explains data sources, governance, quality, and preprocessing steps. Includes well-documented KNIME workflows.
+4 to >3.5 Pts
+D
+Covers data sources and processing well, but some details on governance or transformations are missing. Includes KNIME workflows.
+3.5 to >3.0 Pts
+C
+Provides basic data description but lacks discussion on governance or cleaning process. Demonstrates good understanding of data and data transformations. Includes KNIME workflow or screenshot of workflow.
+3 to >2.25 Pts
+P
+Limited evidence of understanding of data sources, processing, and transformations.
+2.25 to >0 Pts
+Needs Improvement
+Poor or missing discussion of data and processing and sources. Major errors in dealing with data.
+5 pts
+This criterion is linked to a learning outcomeExploratory Data Analysis
+4 to >3.5 Pts
+HD
+Effectively explores the dataset using appropriate techniques. Clear insights derived from summary statistics and charts.
+3.5 to >3.0 Pts
+D
+Adequate exploration but some insights lack depth or clarity.
+3 to >2.5 Pts
+C
+Basic exploration provided, but lacks meaningful observations.
+2.5 to >2.0 Pts
+P
+Minimal data exploration, unclear insights.
+2 to >0 Pts
+Needs Improvement
+No data exploration included or does not seem to relate to visualisation purpose.
+4 pts
+This criterion is linked to a learning outcomeVisualisation & Webpage Design
+10 to >8.0 Pts
+HD
+Well-justified selection of chart types, clear adherence to design principles. Effective use of colour, labels, annotations, wireframes and storyboards.
+8 to >7.0 Pts
+D
+Good choice of visualisations with mostly appropriate and justified design decisions. Some use of wireframes and storyboards to refine design.
+7 to >6.0 Pts
+C
+Charts and design decisions are functional but lack depth in justification. Minimal use of wireframes and storyboard.
+6 to >4.5 Pts
+P
+Design lacks clarity, with weak rationale for visualisation choices. Little or no evidence of planning visualisation story or website layout.
+4.5 to >0 Pts
+Needs Improvement
+Poorly designed or unjustified visualisations.
+10 pts
+This criterion is linked to a learning outcomeInteractivity
+4 to >3.2 Pts
+HD
+Interactive features significantly enhance usability. Justified interactions improve data exploration and/or understanding.
+3.2 to >2.8 Pts
+D
+Interaction is effective but lacks full justification of interactive design features.
+2.8 to >2.4 Pts
+C
+Basic interactive design features described, but lacks strong rationale.
+2.4 to >1.8 Pts
+P
+Minimal interactive features described without justification of how they will improve user experience.
+1.8 to >0 Pts
+Needs Improvement
+No interactivity or poorly designed without consideration of users needs.
+4 pts
+This criterion is linked to a learning outcomeIteration & Validation
+5 to >4.0 Pts
+HD
+Shows iterative testing, feedback implementation, and usability evaluation with clear improvements. Accessibility features are discussed and fully implemented.
+4 to >3.5 Pts
+D
+Some iteration and validation conducted but usability evaluation method and results not fully described. Accessibility features are mentioned but not fully implemented.
+3.5 to >3.0 Pts
+C
+Minor refinements based on limited feedback. Evaluation is incomplete or not fully documented.
+3 to >2.25 Pts
+P
+Little evidence of iteration or incorporation of feedback.
+2.25 to >0 Pts
+Needs Improvement
+No evidence of iteration, testing or validation performed.
+5 pts
+This criterion is linked to a learning outcomeImplementation 1: Coding Practice
+5 to >4.0 Pts
+HD
+Code is well-structured, efficient, and follows best practices (clean, modular, and well-commented). The site loads quickly and handles large datasets efficiently.
+4 to >3.5 Pts
+D
+Code is structured and mostly efficient, with minor areas for improvement. Performance is good with occasional slowdowns.
+3.5 to >3.0 Pts
+C
+Code is functional but lacks efficiency or structure. Some performance issues present.
+3 to >2.4 Pts
+P
+Code is messy, redundant, or lacks comments. Coding standards are inconsistently followed, resulting in some readability issues. Comments limited to basic function descriptions.
+2.4 to >0 Pts
+Needs Improvement
+One or more of the following: Code is not uploaded. Poorly structured, inefficient, or buggy code. Major performance issues. Data visualisation/s are not coded in D3. Coding standards are not followed, resulting in inconsistent formatting and naming conventions. Use of GenAI without acknowledgement.
+5 pts
+This criterion is linked to a learning outcomeImplementation 2: Complexity of Project
+5 to >4.0 Pts
+HD
+Implements advanced, non-standard visualisations and thoughtfully applied annotations. Successfully integrates multiple datasets with appropriate joins, transformations, and filtering. The data processing enhances the depth of insights.
+4 to >3.5 Pts
+D
+Non-standard charts are used, but not necessarily well designed for purpose of website. Rich annotations.
+3.5 to >3.0 Pts
+C
+Uses mostly standard visualisations but attempts some customisation and annotations.
+3 to >2.4 Pts
+P
+Relies only on standard visualisations (e.g., bar, pie, line, scatter plot) with minimal customisation, but does include some annotations.
+2.4 to >0 Pts
+Needs Improvement
+Only basic charts (bar, line, pie) with no additional annotations. All charts are programmed in D3.
+5 pts
+This criterion is linked to a learning outcomeImplementation 3: Interactivity and responsive design
+5 to >4.0 Pts
+HD
+A variety of interactive features are implemented well and allow user to explore and understand data in greater depth. Interactions are smooth and responsive.
+4 to >3.5 Pts
+D
+A variety of interactive features are present and implemented well. Design is responsive.
+3.5 to >3.0 Pts
+C
+Basic interactivity present but may not work smoothly and charts or other elements may not line up well.
+3 to >2.4 Pts
+P
+Limited interactivity with noticeable usability problems.
+2.4 to >0 Pts
+Needs Improvement
+No interactivity or broken/misleading features. Navigation is confusing or non-functional. All charts are programmed in D3.
+5 pts
+This criterion is linked to a learning outcomeImplementation 4: Story telling
+5 to >4.0 Pts
+HD
+The visualisation tells a compelling, data-driven story. Context, insights, and conclusions are clearly communicated. User is guided effectively through the data.
+4 to >3.5 Pts
+D
+The story is engaging and mostly clear, but requires additional annotations or context to make message clearer.
+3.5 to >3.0 Pts
+C
+Basic storytelling is present, but some key points are unclear or not well supported.
+3 to >2.4 Pts
+P
+The narrative is weak, disjointed, or lacks clear connections to the data.
+2.4 to >0 Pts
+Needs Improvement
+No clear story or context. Data is presented without explanation.
+5 pts
+This criterion is linked to a learning outcomeReferencing
+2 to >1.5 Pts
+HD
+All references are accurate and consistently formatted according to APA7 style. Wide range of high-quality sources, seamlessly integrated into the work.
+1.5 to >1.0 Pts
+D
+References are mostly accurate and formatted consistently, with minor errors. Good range of sources, well integrated into the writing.
+1 Pts
+C
+Most references are accurate with some formatting errors. Adequate use of sources, with some integration into the argument.
+1 to >0.5 Pts
+P
+Some references are accurate, but many are incomplete or formatted incorrectly. Uses a limited range of sources, with some integration into the text.
+0.5 to >0 Pts
+Needs Improvement
+Many references are incorrect or missing; formatting is inconsistent. Relies on few or irrelevant sources, with little integration into the writing. Less than 25-30% similarity rating on Turnitin. Special NOTE: One or more references are fabricated (will result in assessment FAIL and academic integrity investigation).
+2 pts
+This criterion is linked to a learning outcomeAI Declaration
+2 to >1.5 Pts
+HD
+Clearly discloses the use of AI tools, specifying the extent of assistance and how AI-generated content was incorporated while maintaining academic integrity.
+1.5 to >1.25 Pts
+D
+Discloses AI use but lacks some detail on its role in the work. Transparency is present but could be clearer.
+1.25 to >1.0 Pts
+C
+Mentions AI use but provides limited transparency about how it influenced the final work.
+1 to >0.5 Pts
+P
+AI use is vaguely acknowledged or downplayed, making it unclear how AI contributed to the work.
+0.5 to >0 Pts
+Needs Improvement
+No disclosure of AI assistance, or attempts to conceal its use, violating academic integrity standards. Special NOTE: One or more references are fabricated (will result in assessment FAIL and academic integrity investigation).
+2 pts
+Total points: 56

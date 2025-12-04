@@ -1,0 +1,4772 @@
+[
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 89354
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4204525
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 20333
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 111662
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2883056
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10747
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 661839
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 25903
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 678140
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 412
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3516900
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 25006
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 661386
+  },
+  {
+    "YEAR": 2008,
+    "START_DATE": "2008-01-01 00:00:00",
+    "END_DATE": "2008-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9823
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 88403
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4440862
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 24884
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 159374
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3098664
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12489
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 716186
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 43681
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 613945
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3641499
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 28083
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 512595
+  },
+  {
+    "YEAR": 2009,
+    "START_DATE": "2009-01-01 00:00:00",
+    "END_DATE": "2009-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7565
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 97612
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4637033
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 32455
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 181626
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3199185
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 21655
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 731645
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 45124
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 606991
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1427
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3864296
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 41642
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 551911
+  },
+  {
+    "YEAR": 2010,
+    "START_DATE": "2010-01-01 00:00:00",
+    "END_DATE": "2010-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9773
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 100217
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4520010
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 33528
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 176358
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3369995
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 25172
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 604722
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 44178
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 559854
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1678
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3513951
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 25140
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 603484
+  },
+  {
+    "YEAR": 2011,
+    "START_DATE": "2011-01-01 00:00:00",
+    "END_DATE": "2011-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7637
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 90817
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1733
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4735462
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 31446
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 167667
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3483717
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 19686
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 542219
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 43569
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 550354
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1698
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3943320
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 47745
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 736209
+  },
+  {
+    "YEAR": 2012,
+    "START_DATE": "2012-01-01 00:00:00",
+    "END_DATE": "2012-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9124
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 129577
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2429
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5153136
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 34280
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 156719
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3696689
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 20787
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 525003
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 51179
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 551444
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1819
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3482898
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 39471
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 897397
+  },
+  {
+    "YEAR": 2013,
+    "START_DATE": "2013-01-01 00:00:00",
+    "END_DATE": "2013-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7265
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 147552
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2520
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5916338
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 38830
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 175914
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3887768
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 21225
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 554882
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 49777
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 475510
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3431
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3837417
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 55908
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1236194
+  },
+  {
+    "YEAR": 2014,
+    "START_DATE": "2014-01-01 00:00:00",
+    "END_DATE": "2014-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 14513
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 121416
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2090
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6117884
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 62247
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 181843
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3574901
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 39950
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 563224
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 53691
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 469610
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3738
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3063830
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 106503
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1579274
+  },
+  {
+    "YEAR": 2015,
+    "START_DATE": "2015-01-01 00:00:00",
+    "END_DATE": "2015-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 29914
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 116490
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2721
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4908582
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 89101
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 171618
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3411115
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 50812
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 529440
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 48690
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 512906
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3722
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3054233
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 95104
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1926480
+  },
+  {
+    "YEAR": 2016,
+    "START_DATE": "2016-01-01 00:00:00",
+    "END_DATE": "2016-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 35448
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 88929
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2919
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4898088
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 111176
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 199016
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2766038
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 62098
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 591574
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 49626
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 462344
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3730
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4230974
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 100475
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2549578
+  },
+  {
+    "YEAR": 2017,
+    "START_DATE": "2017-01-01 00:00:00",
+    "END_DATE": "2017-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 38576
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 89989
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3228
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5538320
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 115874
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 143408
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2652739
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 67784
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 519770
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 51382
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 450715
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4005
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3546342
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 109780
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2094996
+  },
+  {
+    "YEAR": 2018,
+    "START_DATE": "2018-01-01 00:00:00",
+    "END_DATE": "2018-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 40299
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 90248
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4128
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6014549
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 166351
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 155950
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2663066
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 66959
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 563324
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 49062
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 386687
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4826
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3238498
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 176294
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2135725
+  },
+  {
+    "YEAR": 2019,
+    "START_DATE": "2019-01-01 00:00:00",
+    "END_DATE": "2019-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 39695
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 39355
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2866
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2839850
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 129618
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 103102
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1351230
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 31595
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 402700
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 34767
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 122297
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5219
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1153190
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 90749
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1292819
+  },
+  {
+    "YEAR": 2020,
+    "START_DATE": "2020-01-01 00:00:00",
+    "END_DATE": "2020-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 27795
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 16141
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 808
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2794704
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 105407
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 81987
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1995
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1569648
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 48147
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 480023
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 27814
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 89418
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4384
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1343080
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 163764
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1975362
+  },
+  {
+    "YEAR": 2021,
+    "START_DATE": "2021-01-01 00:00:00",
+    "END_DATE": "2021-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 41409
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 35591
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2757
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3825522
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 111052
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 65819
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1119
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1657920
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 62602
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 554774
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 64861
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 116300
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4467
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2203908
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 167648
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2179499
+  },
+  {
+    "YEAR": 2022,
+    "START_DATE": "2022-01-01 00:00:00",
+    "END_DATE": "2022-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 43627
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3904
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 98
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 375715
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8713
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8263
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 42411
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3612
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13746
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 345
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 255460
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11682
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 180092
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-01-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5664
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1853203
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-01-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 57099
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2263
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 26
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 216180
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9184
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11545
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 41570
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4335
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13151
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 309
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 166094
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10515
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 152108
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-02-01 00:00:00",
+    "END_DATE": "2023-02-28 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4521
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8566
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 76
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 216316
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9060
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8281
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 57113
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5405
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10379
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 323
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 246786
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13887
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 146186
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-03-01 00:00:00",
+    "END_DATE": "2023-03-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4665
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7208
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 133
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 473375
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8478
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11858
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 60366
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4389
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11698
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 346
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 254201
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13093
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 183265
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-04-01 00:00:00",
+    "END_DATE": "2023-04-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3784
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4054
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 79
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 230157
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12582
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11032
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 35710
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2977
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10923
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 458
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 169950
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12265
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 138420
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-05-01 00:00:00",
+    "END_DATE": "2023-05-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2944
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4012
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 102
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 427185
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 16007
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7933
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 45263
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3549
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9662
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 313
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 220727
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11706
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 141376
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-06-01 00:00:00",
+    "END_DATE": "2023-06-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1379
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4566
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 68
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 205822
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9301
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7329
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 40781
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4400
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9247
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 442
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 211525
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12337
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 114495
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-07-01 00:00:00",
+    "END_DATE": "2023-07-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1579
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8052
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 134
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 226310
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11708
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7918
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 60867
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5319
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9166
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 452
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 221653
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12979
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 170354
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-08-01 00:00:00",
+    "END_DATE": "2023-08-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3783
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4320
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 37
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 266876
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 14306
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8594
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 54997
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5045
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11471
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 463
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 283381
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11924
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 202558
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-09-01 00:00:00",
+    "END_DATE": "2023-09-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3540
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3302
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 55
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 243868
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 14578
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8252
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 47480
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4877
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11303
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 459
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 228785
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11736
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 179858
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-10-01 00:00:00",
+    "END_DATE": "2023-10-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3445
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 2319
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 64
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 178595
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11531
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7217
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 53633
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4552
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11289
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 435
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 287232
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13753
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 180012
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-11-01 00:00:00",
+    "END_DATE": "2023-11-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4031
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5891
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 178
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 454307
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 34162
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9492
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 58229
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4118
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 15688
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 580
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 381408
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 14159
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 226217
+  },
+  {
+    "YEAR": 2023,
+    "START_DATE": "2023-12-01 00:00:00",
+    "END_DATE": "2023-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6566
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8707
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 183
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 307056
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 22665
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3245
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 54670
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4060
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11456
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 470
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 265944
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11526
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 174566
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-01-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4385
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 1868017
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-01-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "QLD",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 56662
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4139
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 118
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 205087
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 14327
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4147
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 42085
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4529
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9329
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 351
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 189555
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11100
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 143887
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-02-01 00:00:00",
+    "END_DATE": "2024-02-29 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3718
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5672
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 132
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 361346
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 22072
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6730
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 57035
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4552
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11397
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 439
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 334209
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 13612
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 180192
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-03-01 00:00:00",
+    "END_DATE": "2024-03-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5127
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5470
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 145
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 342521
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 23383
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5770
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 45930
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3362
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10321
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 320
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 274588
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12203
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 148805
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-04-01 00:00:00",
+    "END_DATE": "2024-04-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5741
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6020
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 107
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 174150
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 17333
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8819
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 36853
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3846
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10084
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 449
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 217383
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12924
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 154745
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-05-01 00:00:00",
+    "END_DATE": "2024-05-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5132
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4365
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 111
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 317485
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 21816
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8696
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 36293
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3505
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10285
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 428
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 275190
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11017
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 152211
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-06-01 00:00:00",
+    "END_DATE": "2024-06-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3532
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4979
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 109
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 166235
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12747
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9776
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 38385
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4342
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8963
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 405
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 198934
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 10992
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 164433
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-07-01 00:00:00",
+    "END_DATE": "2024-07-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3253
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5776
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 117
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 200413
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12354
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 16232
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 46259
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5656
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9633
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 493
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 247507
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "VIC",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12584
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 163479
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-08-01 00:00:00",
+    "END_DATE": "2024-08-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4363
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 3698
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 127
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 285780
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 18827
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11706
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 38059
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4284
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9995
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 541
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 200575
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-09-01 00:00:00",
+    "END_DATE": "2024-09-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4077
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 8194
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 107
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 290199
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 18967
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 11005
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 42232
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4844
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7673
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 383
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 200567
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-10-01 00:00:00",
+    "END_DATE": "2024-10-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5504
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4494
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 159
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 254818
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 19545
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 7403
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 47743
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 4208
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 9377
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 501
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 201826
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-11-01 00:00:00",
+    "END_DATE": "2024-11-30 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5718
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 18584
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "ACT",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 152
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 527498
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "NSW",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 27222
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "NT",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 12295
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 59658
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "SA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 5533
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 17679
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "TAS",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 518
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "breath_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 232005
+  },
+  {
+    "YEAR": 2024,
+    "START_DATE": "2024-12-01 00:00:00",
+    "END_DATE": "2024-12-31 00:00:00",
+    "JURISDICTION": "WA",
+    "METRIC": "drug_tests_conducted",
+    "DETECTION_METHOD": "Not applicable",
+    "COUNT": 6669
+  }
+]

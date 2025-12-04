@@ -1,0 +1,50 @@
+# Node / JavaScript artifacts
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build outputs
+build/
+dist/
+.tmp/
+temp/
+coverage/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# LaTeX build outputs
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+*.toc
+*.synctex.gz
+_minted/
+docs/_minted/
+
+# Generated document extracts
+docs/extracted_text/
+
+# Archives and large exports
+archives/
+
+# Local raw datasets (published copies live in web/)
+data/*.xlsx
+data/*-1.csv
+data/knime_exports/
+data/processed_police_data.json
+processed_police_data.json
+
+# KNIME runtime artifacts
+knime/**/.artifacts/
+knime/**/port_*/data.zip
+
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

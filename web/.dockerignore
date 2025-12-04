@@ -1,0 +1,7 @@
+# Ignore unnecessary files
+*.md
+README*
+.git
+.gitignore
+node_modules
+*.log

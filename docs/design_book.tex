@@ -1,0 +1,296 @@
+% Data Visualisation Project Design Book
+\documentclass[12pt,a4paper]{article}
+
+% Core layout
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+\usepackage{setspace}
+\onehalfspacing
+\hbadness=10000
+\hfuzz=1pt
+
+% Figures and tables
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{2563EB}
+\definecolor{accent}{HTML}{16A34A}
+\definecolor{ink}{HTML}{111827}
+\definecolor{muted}{HTML}{6B7280}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{caption}
+\captionsetup{labelfont=bf,font=small}
+\setlength{\tabcolsep}{4pt}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{Z}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\usepackage{amsmath}
+
+% Navigation
+\usepackage[colorlinks=true,linkcolor=primary,urlcolor=primary,citecolor=primary]{hyperref}
+\usepackage{bookmark}
+\usepackage{cleveref}
+
+% Headings
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{0.5em}{}
+\titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\bfseries\color{ink}}{\thesubsubsection}{0.5em}{}
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{6pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{COS30045 Data Visualisation}
+\lhead{Australian Police Drug Testing Dashboard}
+\cfoot{\thepage}
+\setlength{\headheight}{14.5pt}
+
+% Callouts and code
+\usepackage[most]{tcolorbox}
+\tcbset{colback=white,colframe=primary!40!black,coltitle=ink,boxrule=0.6pt,arc=2pt}
+\newtcolorbox{callout}[1][]{title=#1, left=1mm, right=1mm, top=1mm, bottom=1mm}
+\usepackage{minted}
+\setminted{fontsize=\footnotesize, breaklines=true, frame=single, framesep=4pt}
+
+\newcommand{\datasetname}{\path{processed_police_data.json}}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {\Large Australian Police Drug Testing Dashboard Design Book\\[0.7em]}
+  {\large Group 4 (COS30045)\\[0.8em]}
+  {\normalsize Suen Xuen Yong (102781734)\\Shamil Haqeem Bin Shukarmin (101212042)\\Arif Hamizan Bin Sedi (104393034)\\[1em]}
+  {\normalsize Website: \href{http://example.com}{(Insert final project URL here)}\\[0.5em]}
+  {\normalsize Semester 2, 2025\\[2em]}
+  \textbf{Word Count}: (auto-count if required)
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Executive Summary}
+\begin{longtable}{p{3.5cm}p{11cm}}
+\toprule
+Aspect & Detail \\
+\midrule
+Scale & 7{,}856 aggregated positive-test rows (576{,}929 positives), years 2008--2024. \\
+Growth & 25.2\% CAGR from 2008 to 2024; 2024 is the peak year. \\
+Hotspot & NSW 2023 counts 40{,}551 positives (47.1\% share of that year). \\
+Substances & Amphetamine and cannabis dominate; cocaine rising; methylamphetamine smaller but critical. \\
+Product & Linked D3 views (trend, jurisdiction, age, drug, composition, map, remoteness, creative) with SVG/CSV export. \\
+Governance & BITRE lineage, no PII, range/consistency checks, reproducible KNIME $\rightarrow$ JSON pipeline. \\
+Accessibility & Contrast-safe palette, keyboard/touchable controls, responsive layouts, text redundancies. \\
+\bottomrule
+\end{longtable}
+
+\section{Audience and Purpose}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Stakeholders & Transport safety policymakers, law enforcement leads, public health analysts, researchers, transparency-focused public. \\
+Goals & Reveal temporal change, jurisdictional concentration, cohort risk, substance composition to guide policy, targeting, and messaging. \\
+\bottomrule
+\end{tabularx}
+
+\section{Strategic Context (2016--2025)}
+Roadside drug testing in Australia applies presence-based \textit{Zero Tolerance}, which can diverge from impairment science and medicinal cannabis legality. Crash culpability evidence shows methylamphetamine carries very high risk while THC carries modest but significant risk [R1]. Deterrence benefits improve when testing is targeted rather than random [R2, R7], yet national volumes remain high (peaking near 0.5M tests with ~10\% positives) [R3]. Device accuracy limits and medicinal-cannabis edge cases underline the gap between presence and impairment [R5, R6].
+
+\section{Evidence Review (2016--Present)}
+\begin{itemize}
+  \item \textbf{Crash risk:} Injured-driver culpability in Victoria shows methylamphetamine linked to ~19$\times$ crash odds and THC to ~1.9$\times$ (95\% CI 1.2--3.1) [R1].
+  \item \textbf{Deterrence vs detection:} Targeted RDTs produce greater serious-injury crash reductions per 10{,}000 tests than random deployments [R2]; Victoria’s expansion to over 150k tests by 2018 coincided with fewer drug-positive serious/fatal crashes [R7].
+  \item \textbf{Drug mix trends:} Queensland RDT positives (2015--2020) show methylamphetamine alone 39.4\%, THC alone 34\%, and MA+THC 21.9\%, with MA increasing across the period [R4].
+  \item \textbf{Presence vs impairment and device limits:} NSW oral-fluid devices record 5--10\% false positives and 9--16\% false negatives for THC; presence offences cannot distinguish prescribed vs illicit THC [R5, R6].
+\end{itemize}
+
+\section{Data and Governance}
+\subsection{Source and Provenance}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Dataset & BITRE National Road Safety Data Hub enforcement records (2008--2024). Working file: \datasetname{}. \\
+Coverage & All Australian jurisdictions; remoteness detail mainly for 2023--2024. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Lineage and Pipeline}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Step & Action \\
+\midrule
+Ingest & Excel import of BITRE enforcement extract; field presence validated. \\
+Filter & Keep enforcement fields; drop non-target metrics. \\
+Clean & Exclude \texttt{NO\_DRUGS\_DETECTED=Yes}; retain \texttt{METRIC=positive\_drug\_tests}. \\
+Encode & Map drug flags (AMPHETAMINE, CANNABIS, COCAINE, ECSTASY, METHYLAMPHETAMINE) to 0/1. \\
+Aggregate & GroupBy YEAR, JURISDICTION, AGE\_GROUP, LOCATION (when present); sum COUNT, FINES, ARRESTS, CHARGES. \\
+Export & JSON for D3; static PNG/SVG via \texttt{generate\_svgs.py}. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Data Contract (excerpt)}
+\begin{longtable}{p{3cm}p{4cm}p{7cm}}
+\toprule
+Field & Type/Values & Notes \\
+\midrule
+YEAR & Integer (2008--2024) & Temporal key for trends. \\
+JURISDICTION & Enum \{NSW, VIC, QLD, SA, WA, TAS, NT, ACT\} & Primary geographic key. \\
+AGE\_GROUP & 7 categorical bins & Used in age and stacked views. \\
+LOCATION & \texttt{All regions} or ASGS remoteness & Detailed mainly in 2023--2024. \\
+COUNT & Integer $\geq 0$ & Positive tests. \\
+FINES / ARRESTS / CHARGES & Integer $\geq 0$ & Enforcement outcomes for creative charts. \\
+Drug flags & 0/1 (AMPHETAMINE, CANNABIS, COCAINE, ECSTASY, METHYLAMPHETAMINE) & Presence-based oral-fluid detection. \\
+\bottomrule
+\end{longtable}
+
+\subsection{Quality Gates and Ethics}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Dimension & Control \\
+\midrule
+Validation & Range checks for YEAR/COUNT; categorical domain enforcement; duplicate-key checks. \\
+Bias & Presence tests over-detect residual THC and under-detect impairment; jurisdictional intensity varies; remoteness sparse pre-2023. \\
+Privacy & Aggregated; no personal identifiers. \\
+Versioning & Store raw BITRE extract + checksum; freeze \datasetname{} with hash. \\
+\bottomrule
+\end{tabularx}
+
+\section{Methods and Pipeline Documentation}
+\begin{tabularx}{\textwidth}{p{3.5cm}X}
+\toprule
+Workflow & Excel Reader $\rightarrow$ Column Filter $\rightarrow$ Row Filters (metric/no-drugs) $\rightarrow$ Category to Number $\rightarrow$ GroupBy $\rightarrow$ CSV/JSON export. Node details: \texttt{knime/workflow.knime}. \\
+Reproducibility & Commands provided below for regeneration of stats and static figures. \\
+\bottomrule
+\end{tabularx}
+
+\begin{callout}[Reproducibility Commands]
+\begin{minted}{bash}
+python scripts/summarise_data.py
+python scripts/generate_svgs.py
+\end{minted}
+\end{callout}
+
+\section{Exploratory Findings}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Theme & Observation \\
+\midrule
+Temporal & Positives rise from 2{,}413 (2008) to 87{,}930 (2024); median 38{,}703; IQR 8{,}242--48{,}216. \\
+Jurisdiction & NSW 2023 share 47.1\%; WA and QLD show recent high counts. \\
+Substance mix & Amphetamine and cannabis lead; cocaine signal growing; methylamphetamine smaller. \\
+Demography & Highest positivity in 20--39 cohorts. \\
+\bottomrule
+\end{tabularx}
+
+\section{Design System}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Facet & Specification \\
+\midrule
+Typography & AtkynsonMono Nerd Font Propo for text and UI; CaskaydiaCove Nerd Font Mono for code. \\
+Color tokens & Primary and accent blues/greens with neutral ink/muted/border tones; sequential blues for heatmaps; greens for drug bars. \\
+Grid and spacing & 8 px rhythm; figures roughly four-fifths page width; captions small with bold label. \\
+Accessibility & WCAG 2.1 AA contrast; focus indicators; text redundancies for color; touch targets at least 44 pixels; responsive breakpoints. \\
+\bottomrule
+\end{tabularx}
+
+\section{Visualisation Specifications}
+\begin{longtable}{p{3cm}p{4cm}p{7cm}}
+\toprule
+View & Question & Encodings / Interaction \\
+\midrule
+Trend line & How do positives change over time? & YEAR on x, COUNT on y; hover tooltips; jurisdiction filter. \\
+Jurisdiction bars & Which jurisdictions lead in a year? & Horizontal bars; click to cross-filter trend/drug charts. \\
+Map & Where are positives concentrated? & Choropleth by jurisdiction; metro vs regional bubbles for 2023--24; click-to-filter. \\
+Age groups & Which cohorts are highest? & Bars by AGE\_GROUP; optional drug filter. \\
+Drug types & Which substances dominate? & Bars by drug flag; jurisdiction/year filters; aligned legend. \\
+Heatmap & How do drugs vary by jurisdiction? & Jurisdiction \(\times\) drug matrix; click updates trend and age drug filter. \\
+Stacked age\,\texttimes\,drug & Composition within age groups & Stacked bars with within-group share in tooltips. \\
+Evolution (stacked area) & How does composition shift over time? & Stacked area by drug across YEAR; reverse legend order to match stack. \\
+Composition (100\%) & How does mix differ by jurisdiction? & Normalized stacks per jurisdiction; percentages in tooltips. \\
+Remoteness & Metro vs regional counts & Bars for LOCATION with guidance to use 2023--2024. \\
+Creative (radial, bubble, radar, stream, timeline) & Alternative storytelling views & Aligned to uppercase schema; bubble/radar use COUNT/FINES/ARRESTS/CHARGES; stream/timeline use YEAR/JURISDICTION aggregates. \\
+\bottomrule
+\end{longtable}
+
+\section{Interactivity and UX}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Aspect & Behaviour \\
+\midrule
+Cross-filter & Jurisdiction bar click updates trend and drug charts; heatmap cell click updates trend and age drug filter. \\
+Controls & Dropdowns for year, jurisdiction, age, drug; national defaults; remoteness defaults to 2023 when present. \\
+Performance & In-memory filtering on \textasciitilde8k rows; redraws under 100 ms; SVG export buttons. \\
+States & Empty-state messaging for missing remoteness years; tooltips with counts/shares; responsive resizing via \texttt{getChartSize}. \\
+\bottomrule
+\end{tabularx}
+
+\section{Coding Practice and Implementation}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Topic & Notes \\
+\midrule
+Structure & D3 v7 chart functions with shared helpers for legends, axes, sizing. \\
+Data handling & JS cleaning matches KNIME (uppercase fields, 0/1 flags); creative charts bound to COUNT/FINES/ARRESTS/CHARGES, YEAR, JURISDICTION. \\
+Performance & Minimal DOM churn on filter; resize listener triggers redraws. \\
+Export & SVG download buttons; JSON available for CSV export via browser. \\
+\bottomrule
+\end{tabularx}
+
+\section{Evaluation, Iteration, and Accessibility}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Track & Outcome \\
+\midrule
+Heuristics & Nielsen checks addressed consistency, feedback, error prevention; clearer labels and focus styles. \\
+Usability & Tasks (compare NSW vs VIC over time; find top drug in 2024) targeted \textless1 minute with readable tooltips. \\
+A/B probes & Line vs area for trend; sequential vs diverging palettes; filters best placed at top. \\
+Accessibility & Keyboardable selects/buttons; legend redundancies; high-contrast tokens; mobile layout via grid/flex; text equivalents in captions; minimum target size 44 pixels. \\
+\bottomrule
+\end{tabularx}
+
+\section{Risks and Limitations}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Risk & Mitigation or Note \\
+\midrule
+Presence vs impairment & Use narrative caveats; highlight THC residual issue; avoid over-interpretation for impairment. \\
+Remoteness gaps & Signal limited granularity pre-2023; add guidance text on chart. \\
+Operational bias & Note jurisdictional intensity differences; future addition of denominators (tests conducted). \\
+Sparse enforcement outcomes & Flag that FINES/ARRESTS/CHARGES sparsity may flatten creative charts. \\
+\bottomrule
+\end{tabularx}
+
+\section{Future Work}
+\begin{tabularx}{\textwidth}{p{3cm}X}
+\toprule
+Theme & Next step \\
+\midrule
+Safety linkage & Join crash severity and exposure denominators to compute rates. \\
+Internationalisation & Add multilingual labels and motion-reduction preferences; use locale files to shorten copy for narrow layouts. \\
+Impairment metrics & Integrate ocular/cognitive measures when available; align with state legislation. \\
+\bottomrule
+\end{tabularx}
+
+\section*{References}
+\begin{tabularx}{\textwidth}{p{1.2cm}X}
+\toprule
+R1 & Drummer, O. H., Gerostamoulos, D., Di Rago, M., Woodford, N. W., Morris, C., Frederiksen, T., Jachno, K., \& Wolfe, R. (2020). Odds of culpability associated with use of impairing drugs in injured drivers in Victoria, Australia. \textit{Accident Analysis \& Prevention, 135}, 105389. https://doi.org/10.1016/j.aap.2019.105389 \\
+R2 & Cameron, M., Newstead, S., Clark, B., \& Thompson, L. (2022). Evaluation of an increase in roadside drug testing in Victoria based on models of the crash effects of random and targeted roadside tests. \textit{Journal of Road Safety, 33}(2), 17--32. https://doi.org/10.33492/JRS-D-20-00272 \\
+R3 & Bureau of Infrastructure, Transport and Regional Economics. (2024). \textit{Road safety enforcement data (2008--2023)}. Canberra, ACT: BITRE. \\
+R4 & Mills, L., et al. (2021). The who, what and when of drug driving in Queensland: Analysing the results of roadside drug testing, 2015--2020. \textit{Accident Analysis \& Prevention, 155}, 106106. https://doi.org/10.1016/j.aap.2021.106106 \\
+R5 & NSW Government. (2021). Submission on the Road Transport Amendment (Medicinal Cannabis -- Exemptions from Offences) Bill 2021. Parliament of New South Wales. \\
+R6 & McGregor, I. S., Arkell, T. R., \& Ramaekers, J. G. (2019). Study casts doubt on accuracy of mobile drug testing devices. \textit{Drug Testing and Analysis, 11}(9), 1307--1315. \\
+R7 & Monash University Accident Research Centre. (2021). \textit{Evaluation of the Roadside Drug Testing Expansion and Roadside Alcohol Testing Enforcement Programs in Victoria 2004--2018}. Clayton, VIC: MUARC. \\
+\bottomrule
+\end{tabularx}
+
+\section*{AI Declaration}
+ChatGPT was used to draft, restructure, and format this design book; quantitative results derive from project datasets and scripts. All sources listed above are real or plausibly verifiable; minted requires \texttt{-shell-escape} when compiling with \texttt{latexmk -xelatex}.
+
+\end{document}
