@@ -266,7 +266,7 @@ export class ComparisonBarChart extends BaseChart {
             .attr('class', 'axis-label')
             .attr('transform', 'rotate(90)')
             .attr('x', this.height / 2)
-            .attr('y', -this.width - 20)
+            .attr('y', -this.width + 20)
             .attr('text-anchor', 'middle')
             .attr('font-size', '12px')
             .attr('fill', this.colors.rate)
