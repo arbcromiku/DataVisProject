@@ -1,0 +1,26 @@
+[
+  {
+    "location": "Unknown",
+    "count": 56730
+  },
+  {
+    "location": "Major Cities of Australia",
+    "count": 24992
+  },
+  {
+    "location": "Inner Regional Australia",
+    "count": 17262
+  },
+  {
+    "location": "Outer Regional Australia",
+    "count": 4154
+  },
+  {
+    "location": "Remote Australia",
+    "count": 344
+  },
+  {
+    "location": "Very Remote Australia",
+    "count": 42
+  }
+]

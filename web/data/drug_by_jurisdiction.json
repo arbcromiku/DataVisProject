@@ -1,0 +1,122 @@
+[
+  {
+    "jurisdiction": "ACT",
+    "drug": "Amphetamine",
+    "count": 213
+  },
+  {
+    "jurisdiction": "ACT",
+    "drug": "Cannabis",
+    "count": 153
+  },
+  {
+    "jurisdiction": "ACT",
+    "drug": "Cocaine",
+    "count": 4
+  },
+  {
+    "jurisdiction": "ACT",
+    "drug": "Unknown",
+    "count": 124
+  },
+  {
+    "jurisdiction": "NSW",
+    "drug": "Amphetamine",
+    "count": 18244
+  },
+  {
+    "jurisdiction": "NSW",
+    "drug": "Cannabis",
+    "count": 18362
+  },
+  {
+    "jurisdiction": "NSW",
+    "drug": "Cocaine",
+    "count": 4035
+  },
+  {
+    "jurisdiction": "NSW",
+    "drug": "Ecstasy",
+    "count": 1285
+  },
+  {
+    "jurisdiction": "NSW",
+    "drug": "Unknown",
+    "count": 504
+  },
+  {
+    "jurisdiction": "NT",
+    "drug": "Cannabis",
+    "count": 573
+  },
+  {
+    "jurisdiction": "NT",
+    "drug": "Unknown",
+    "count": 2980
+  },
+  {
+    "jurisdiction": "QLD",
+    "drug": "Unknown",
+    "count": 23916
+  },
+  {
+    "jurisdiction": "SA",
+    "drug": "Amphetamine",
+    "count": 6352
+  },
+  {
+    "jurisdiction": "SA",
+    "drug": "Cannabis",
+    "count": 4767
+  },
+  {
+    "jurisdiction": "SA",
+    "drug": "Ecstasy",
+    "count": 236
+  },
+  {
+    "jurisdiction": "SA",
+    "drug": "Unknown",
+    "count": 1087
+  },
+  {
+    "jurisdiction": "TAS",
+    "drug": "Unknown",
+    "count": 5010
+  },
+  {
+    "jurisdiction": "VIC",
+    "drug": "Amphetamine",
+    "count": 10654
+  },
+  {
+    "jurisdiction": "VIC",
+    "drug": "Cannabis",
+    "count": 5507
+  },
+  {
+    "jurisdiction": "VIC",
+    "drug": "Ecstasy",
+    "count": 590
+  },
+  {
+    "jurisdiction": "WA",
+    "drug": "Amphetamine",
+    "count": 8943
+  },
+  {
+    "jurisdiction": "WA",
+    "drug": "Cannabis",
+    "count": 4215
+  },
+  {
+    "jurisdiction": "WA",
+    "drug": "Ecstasy",
+    "count": 180
+  },
+  {
+    "jurisdiction": "WA",
+    "drug": "Unknown",
+    "count": 1369
+  }
+]

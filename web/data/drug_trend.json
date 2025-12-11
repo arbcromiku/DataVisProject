@@ -1,0 +1,52 @@
+[
+  {
+    "year": 2023,
+    "drug": "Amphetamine",
+    "count": 21449
+  },
+  {
+    "year": 2023,
+    "drug": "Cannabis",
+    "count": 16395
+  },
+  {
+    "year": 2023,
+    "drug": "Cocaine",
+    "count": 1211
+  },
+  {
+    "year": 2023,
+    "drug": "Ecstasy",
+    "count": 922
+  },
+  {
+    "year": 2023,
+    "drug": "Unknown",
+    "count": 15230
+  },
+  {
+    "year": 2024,
+    "drug": "Amphetamine",
+    "count": 22957
+  },
+  {
+    "year": 2024,
+    "drug": "Cannabis",
+    "count": 17182
+  },
+  {
+    "year": 2024,
+    "drug": "Cocaine",
+    "count": 2828
+  },
+  {
+    "year": 2024,
+    "drug": "Ecstasy",
+    "count": 1369
+  },
+  {
+    "year": 2024,
+    "drug": "Unknown",
+    "count": 19760
+  }
+]

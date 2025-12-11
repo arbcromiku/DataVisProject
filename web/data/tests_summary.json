@@ -1,0 +1,121 @@
+[
+  {
+    "year": 2008,
+    "tests_conducted": 92224,
+    "positive_detections": 2413,
+    "cleared": 89811,
+    "positive_rate": 2.6
+  },
+  {
+    "year": 2009,
+    "tests_conducted": 116702,
+    "positive_detections": 2910,
+    "cleared": 113792,
+    "positive_rate": 2.5
+  },
+  {
+    "year": 2010,
+    "tests_conducted": 152076,
+    "positive_detections": 4033,
+    "cleared": 148043,
+    "positive_rate": 2.7
+  },
+  {
+    "year": 2011,
+    "tests_conducted": 137333,
+    "positive_detections": 5604,
+    "cleared": 131729,
+    "positive_rate": 4.1
+  },
+  {
+    "year": 2012,
+    "tests_conducted": 155001,
+    "positive_detections": 8242,
+    "cleared": 146759,
+    "positive_rate": 5.3
+  },
+  {
+    "year": 2013,
+    "tests_conducted": 157230,
+    "positive_detections": 9853,
+    "cleared": 147377,
+    "positive_rate": 6.3
+  },
+  {
+    "year": 2014,
+    "tests_conducted": 186204,
+    "positive_detections": 16289,
+    "cleared": 169915,
+    "positive_rate": 8.7
+  },
+  {
+    "year": 2015,
+    "tests_conducted": 298133,
+    "positive_detections": 35143,
+    "cleared": 262990,
+    "positive_rate": 11.8
+  },
+  {
+    "year": 2016,
+    "tests_conducted": 325598,
+    "positive_detections": 38703,
+    "cleared": 286895,
+    "positive_rate": 11.9
+  },
+  {
+    "year": 2017,
+    "tests_conducted": 368600,
+    "positive_detections": 39855,
+    "cleared": 328745,
+    "positive_rate": 10.8
+  },
+  {
+    "year": 2018,
+    "tests_conducted": 392352,
+    "positive_detections": 48216,
+    "cleared": 344136,
+    "positive_rate": 12.3
+  },
+  {
+    "year": 2019,
+    "tests_conducted": 507315,
+    "positive_detections": 48466,
+    "cleared": 458849,
+    "positive_rate": 9.6
+  },
+  {
+    "year": 2020,
+    "tests_conducted": 322609,
+    "positive_detections": 46905,
+    "cleared": 275704,
+    "positive_rate": 14.5
+  },
+  {
+    "year": 2021,
+    "tests_conducted": 393728,
+    "positive_detections": 49465,
+    "cleared": 344263,
+    "positive_rate": 12.6
+  },
+  {
+    "year": 2022,
+    "tests_conducted": 458133,
+    "positive_detections": 46868,
+    "cleared": 411265,
+    "positive_rate": 10.2
+  },
+  {
+    "year": 2023,
+    "tests_conducted": 471199,
+    "positive_detections": 48133,
+    "cleared": 423066,
+    "positive_rate": 10.2
+  },
+  {
+    "year": 2024,
+    "tests_conducted": 500683,
+    "positive_detections": 55391,
+    "cleared": 445292,
+    "positive_rate": 11.1
+  }
+]

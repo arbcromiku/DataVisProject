@@ -1,0 +1,18 @@
+[
+  {
+    "age_group": "17-25",
+    "count": 10409
+  },
+  {
+    "age_group": "26-39",
+    "count": 25731
+  },
+  {
+    "age_group": "40-64",
+    "count": 24327
+  },
+  {
+    "age_group": "65 and over",
+    "count": 648
+  }
+]

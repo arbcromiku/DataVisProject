@@ -1,0 +1,632 @@
+[
+  {
+    "year": 2008,
+    "jurisdiction": "NSW",
+    "count": 542
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "QLD",
+    "count": 216
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "SA",
+    "count": 600
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "TAS",
+    "count": 211
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "VIC",
+    "count": 438
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "WA",
+    "count": 406
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "NSW",
+    "count": 613
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "QLD",
+    "count": 254
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "SA",
+    "count": 1179
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "TAS",
+    "count": 252
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "VIC",
+    "count": 323
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "WA",
+    "count": 289
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "NSW",
+    "count": 735
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "QLD",
+    "count": 440
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "SA",
+    "count": 1699
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "VIC",
+    "count": 741
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "WA",
+    "count": 418
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "NSW",
+    "count": 666
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "QLD",
+    "count": 825
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "SA",
+    "count": 2320
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "TAS",
+    "count": 573
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "VIC",
+    "count": 760
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "WA",
+    "count": 460
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "ACT",
+    "count": 37
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "NSW",
+    "count": 705
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "QLD",
+    "count": 937
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "SA",
+    "count": 3237
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "TAS",
+    "count": 523
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "VIC",
+    "count": 2180
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "WA",
+    "count": 623
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "ACT",
+    "count": 116
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "NSW",
+    "count": 898
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "NT",
+    "count": 84
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "QLD",
+    "count": 1300
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "SA",
+    "count": 3737
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "TAS",
+    "count": 639
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "VIC",
+    "count": 2540
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "WA",
+    "count": 539
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "ACT",
+    "count": 392
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "NSW",
+    "count": 2096
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "NT",
+    "count": 90
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "QLD",
+    "count": 2208
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "SA",
+    "count": 4681
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "TAS",
+    "count": 1969
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "VIC",
+    "count": 3749
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "WA",
+    "count": 1104
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "ACT",
+    "count": 258
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "NSW",
+    "count": 9123
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "NT",
+    "count": 120
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "QLD",
+    "count": 7446
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "SA",
+    "count": 5239
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "TAS",
+    "count": 2318
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "VIC",
+    "count": 7823
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "WA",
+    "count": 2816
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "ACT",
+    "count": 444
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "NSW",
+    "count": 8220
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "NT",
+    "count": 196
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "QLD",
+    "count": 10663
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "SA",
+    "count": 4310
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "TAS",
+    "count": 2154
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "VIC",
+    "count": 9065
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "WA",
+    "count": 3651
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "ACT",
+    "count": 504
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "NSW",
+    "count": 9273
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "NT",
+    "count": 329
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "QLD",
+    "count": 11697
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "SA",
+    "count": 4337
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "TAS",
+    "count": 2152
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "VIC",
+    "count": 8252
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "WA",
+    "count": 3311
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "ACT",
+    "count": 877
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "NSW",
+    "count": 9067
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "NT",
+    "count": 341
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "QLD",
+    "count": 14020
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "SA",
+    "count": 5141
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "TAS",
+    "count": 2408
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "VIC",
+    "count": 11548
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "WA",
+    "count": 4814
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "ACT",
+    "count": 852
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "NSW",
+    "count": 9446
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "NT",
+    "count": 462
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "QLD",
+    "count": 13366
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "SA",
+    "count": 4985
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "TAS",
+    "count": 2487
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "VIC",
+    "count": 11693
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "WA",
+    "count": 5175
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "ACT",
+    "count": 834
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "NSW",
+    "count": 12652
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "NT",
+    "count": 372
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "QLD",
+    "count": 8871
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "SA",
+    "count": 5728
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "TAS",
+    "count": 3273
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "VIC",
+    "count": 10256
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "WA",
+    "count": 4919
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "ACT",
+    "count": 461
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "NSW",
+    "count": 16997
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "NT",
+    "count": 273
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "QLD",
+    "count": 9847
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "SA",
+    "count": 4226
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "TAS",
+    "count": 2618
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "VIC",
+    "count": 9717
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "WA",
+    "count": 5326
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "ACT",
+    "count": 390
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "NSW",
+    "count": 9527
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "NT",
+    "count": 181
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "QLD",
+    "count": 12064
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "SA",
+    "count": 5607
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "TAS",
+    "count": 2209
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "VIC",
+    "count": 10628
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "WA",
+    "count": 6262
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "ACT",
+    "count": 203
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "NSW",
+    "count": 13517
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "NT",
+    "count": 573
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "QLD",
+    "count": 11853
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "SA",
+    "count": 5329
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "TAS",
+    "count": 2223
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "VIC",
+    "count": 8813
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "WA",
+    "count": 5622
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "ACT",
+    "count": 227
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "NSW",
+    "count": 19387
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "NT",
+    "count": 2980
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "QLD",
+    "count": 12063
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "SA",
+    "count": 5333
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "TAS",
+    "count": 2787
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "VIC",
+    "count": 5376
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "WA",
+    "count": 7238
+  }
+]

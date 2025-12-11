@@ -1,468 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>Australian Roadside Drug Testing Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Roadside Drug Testing Analysis</title>
+    
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-    <!-- Main Navigation -->
-    <nav class="main-nav" id="main-nav">
-        <div class="nav-content">
-            <h2 class="nav-brand">Australian Roadside Drug Testing</h2>
-            <ul class="nav-links">
-                <li><a href="#overview" class="nav-link active">Overview</a></li>
-                <li><a href="#trends" class="nav-link">Trends</a></li>
-                <li><a href="#geography" class="nav-link">Geography</a></li>
-                <li><a href="#demographics" class="nav-link">Demographics</a></li>
-                <li><a href="#substances" class="nav-link">Substances</a></li>
-                <li><a href="#analysis" class="nav-link">Deep Dive</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-brand">RDT Analysis</div>
+        <div class="nav-links">
+            <a href="#overview" class="nav-link active">1. The Problem</a>
+            <a href="#trends" class="nav-link">2. The Growth</a>
+            <a href="#geography" class="nav-link">3. Where</a>
+            <a href="#drugs" class="nav-link">4. What</a>
         </div>
     </nav>
 
-    <div class="dashboard-container">
-        <!-- Hero Section -->
-        <header class="hero-section" id="overview">
-            <div class="hero-content">
-                <h1 class="hero-title">Roadside Drug Testing</h1>
-                <p class="hero-subtitle">16 Years of Enforcement Data Across Australia</p>
-                <p class="hero-description">
-                    Explore comprehensive data from 2008–2024 covering millions of roadside drug tests 
-                    across eight Australian jurisdictions. This dashboard reveals patterns in enforcement, 
-                    demographics, and substance prevalence.
-                </p>
-                <div class="hero-tags">
-                    <span class="tag">2008–2024</span>
-                    <span class="tag">8 Jurisdictions</span>
-                    <span class="tag">5 Substances</span>
-                    <span class="tag">Interactive</span>
-                </div>
-            </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" aria-label="Section navigation">
+        <button class="scroll-dot active" data-section="overview" aria-label="Overview section"></button>
+        <button class="scroll-dot" data-section="trends" aria-label="Trends section"></button>
+        <button class="scroll-dot" data-section="geography" aria-label="Geography section"></button>
+        <button class="scroll-dot" data-section="drugs" aria-label="Drug Types section"></button>
+    </div>
 
-            <!-- Key Metrics -->
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-icon">📊</div>
-                    <p class="metric-value" id="stat-total">–</p>
-                    <p class="metric-label">Total Positive Tests</p>
-                    <p class="metric-note">All jurisdictions, 2008–2024</p>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-icon">📍</div>
-                    <p class="metric-value" id="stat-top-jurisdiction">–</p>
-                    <p class="metric-label">Peak Concentration</p>
-                    <p class="metric-note">Single year, single state</p>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-icon">💊</div>
-                    <p class="metric-value" id="stat-top-drug">–</p>
-                    <p class="metric-label">Most Detected</p>
-                    <p class="metric-note">Leading substance overall</p>
-                </div>
-            </div>
-        </header>
-
-        <!-- Global Controls -->
-        <aside class="global-controls">
-            <div class="controls-wrapper">
-                <h3 class="controls-heading">Filter Data</h3>
-                <div class="controls-grid">
-                    <div class="control-item">
-                        <label for="year-start">From Year</label>
-                        <select id="year-start"></select>
-                    </div>
-                    <div class="control-item">
-                        <label for="year-end">To Year</label>
-                        <select id="year-end"></select>
-                    </div>
-                    <div class="control-item">
-                        <button id="reset-filters" class="btn-reset">Reset All Filters</button>
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <main class="dashboard-main">
-            <!-- Section: Trends Over Time -->
-            <section class="viz-section" id="trends">
-                <div class="section-header">
-                    <div class="section-title-group">
-                        <h2 class="section-title">Temporal Trends</h2>
-                        <p class="section-description">How positive test rates have evolved from 2008 to 2024</p>
-                    </div>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Positive Tests Over Time</h3>
-                        <div class="viz-controls">
-                            <label for="trend-jurisdiction">Jurisdiction:</label>
-                            <select id="trend-jurisdiction"></select>
+    <!-- Main Container with Horizontal Scrolling -->
+    <main class="horizontal-container">
+        
+        <!-- Section 1: Overview -->
+        <section id="overview" class="section">
+            <div class="container">
+                <span class="section-number">01</span>
+                <h1>Drug-Impaired Driving in Australia</h1>
+                <p class="section-lead">Every day, 151 drivers test positive for drugs on Australian roads. Here's what 17 years of roadside testing data reveals.</p>
+                
+                <!-- Filter Controls -->
+                <div class="filter-panel">
+                    <div class="filter-group">
+                        <label for="year-start">Year Range</label>
+                        <div class="range-container">
+                            <input type="range" id="year-start" min="2008" max="2024" value="2008">
+                            <span id="range-start-label">2008</span>
+                            <span class="range-separator">-</span>
+                            <input type="range" id="year-end" min="2008" max="2024" value="2024">
+                            <span id="range-end-label">2024</span>
                         </div>
                     </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="trend-chart" data-filename="trend_over_time.svg">Export SVG</button>
+                    
+                    <div class="filter-group">
+                        <label for="jurisdiction-filter">Jurisdiction</label>
+                        <select id="jurisdiction-filter">
+                            <option value="all">All Jurisdictions</option>
+                            <option value="NSW">New South Wales</option>
+                            <option value="VIC">Victoria</option>
+                            <option value="QLD">Queensland</option>
+                            <option value="WA">Western Australia</option>
+                            <option value="SA">South Australia</option>
+                            <option value="TAS">Tasmania</option>
+                            <option value="NT">Northern Territory</option>
+                            <option value="ACT">Australian Capital Territory</option>
+                        </select>
                     </div>
-                    <div id="trend-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Track enforcement trends across jurisdictions. Notice the sharp increase after 2020.
-                    </p>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Drug Type Evolution</h3>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="evolution-chart" data-filename="drug_evolution.svg">Export SVG</button>
-                    </div>
-                    <div id="evolution-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Stacked area chart showing how substance composition has changed over 16 years.
-                    </p>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Radial Timeline</h3>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="radial-chart" data-filename="radial_trend.svg">Export SVG</button>
-                    </div>
-                    <div id="radial-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        A circular perspective revealing temporal patterns and cyclical trends.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Section: Geography -->
-            <section class="viz-section" id="geography">
-                <div class="section-header">
-                    <div class="section-title-group">
-                        <h2 class="section-title">Geographic Distribution</h2>
-                        <p class="section-description">Where positive tests are concentrated across Australia</p>
-                    </div>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Jurisdictions Comparison</h3>
-                        <div class="viz-controls">
-                            <label for="jurisdiction-year">Year:</label>
-                            <select id="jurisdiction-year"></select>
+                    
+                    <div class="filter-group">
+                        <label>Drug Types</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" value="Amphetamine" checked> Amphetamine</label>
+                            <label><input type="checkbox" value="Cannabis" checked> Cannabis</label>
+                            <label><input type="checkbox" value="Ecstasy" checked> Ecstasy</label>
+                            <label><input type="checkbox" value="Cocaine" checked> Cocaine</label>
+                            <label><input type="checkbox" value="Unknown" checked> Unknown</label>
                         </div>
                     </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="jurisdiction-chart" data-filename="jurisdictions.svg">Export SVG</button>
-                    </div>
-                    <div id="jurisdiction-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Compare positive test rates across all eight Australian jurisdictions.
-                    </p>
+                    
+                    <button id="reset-filters" class="btn-reset">Reset Filters</button>
                 </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Australian Map View</h3>
-                        <div class="viz-controls">
-                            <label for="map-year">Year:</label>
-                            <select id="map-year"></select>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-total">--</div>
+                        <div class="stat-label">Total Detections</div>
+                        <div class="stat-context" id="stat-total-context">since 2008</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-growth">
+                            <span class="stat-arrow">↑</span>
+                            <span id="stat-growth-value">--</span>
                         </div>
+                        <div class="stat-label" id="stat-growth-label">Since 2008</div>
+                        <div class="stat-context" id="stat-growth-context">year-over-year</div>
                     </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="map-chart" data-filename="australia_map.svg">Export SVG</button>
-                    </div>
-                    <div id="map-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Geographic visualization: states shaded by regional rates, circles show major city concentrations.
-                    </p>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Urban vs Regional</h3>
-                        <div class="viz-controls">
-                            <label for="remoteness-year">Year:</label>
-                            <select id="remoteness-year"></select>
-                        </div>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="remoteness-chart" data-filename="remoteness.svg">Export SVG</button>
-                    </div>
-                    <div id="remoteness-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Compare major cities vs regional/remote areas (detailed data available 2023–2024).
-                    </p>
-                </div>
-            </section>
-
-            <!-- Section: Demographics -->
-            <section class="viz-section" id="demographics">
-                <div class="section-header">
-                    <div class="section-title-group">
-                        <h2 class="section-title">Demographics</h2>
-                        <p class="section-description">Age group patterns and distribution</p>
+                    <div class="stat-card">
+                        <div class="stat-value" id="stat-peak">--</div>
+                        <div class="stat-label" id="stat-peak-label">Daily Average</div>
+                        <div class="stat-context" id="stat-peak-context">drivers caught per day</div>
                     </div>
                 </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Age Group Breakdown</h3>
-                        <div class="viz-controls">
-                            <label for="age-year">Year:</label>
-                            <select id="age-year"></select>
-                            <label for="age-drug">Substance:</label>
-                            <select id="age-drug"></select>
-                        </div>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="age-chart" data-filename="age_groups.svg">Export SVG</button>
-                    </div>
-                    <div id="age-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Filter by substance to see how different drugs affect different age groups.
-                    </p>
+                
+                <div class="chart-container donut-container">
+                    <h3 class="chart-title">Test Results Breakdown</h3>
+                    <p class="chart-subtitle">9 in 10 tested drivers are cleared</p>
+                    <div id="donut-chart" class="chart"></div>
                 </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Substance Mix by Age</h3>
-                        <div class="viz-controls">
-                            <label for="stacked-year">Year:</label>
-                            <select id="stacked-year"></select>
-                        </div>
-                    </div>
-                    <div id="stacked-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Stacked view revealing unique substance profiles for each age cohort.
-                    </p>
+                <div class="scroll-hint">
+                    <span>Scroll to explore the data →</span>
                 </div>
-            </section>
-
-            <!-- Section: Substances -->
-            <section class="viz-section" id="substances">
-                <div class="section-header">
-                    <div class="section-title-group">
-                        <h2 class="section-title">Substance Analysis</h2>
-                        <p class="section-description">What substances are detected and where</p>
-                    </div>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Drug Type Prevalence</h3>
-                        <div class="viz-controls">
-                            <label for="drugtype-jurisdiction">Jurisdiction:</label>
-                            <select id="drugtype-jurisdiction"></select>
-                            <label for="drugtype-year">Year:</label>
-                            <select id="drugtype-year"></select>
-                        </div>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="drugtype-chart" data-filename="drug_types.svg">Export SVG</button>
-                    </div>
-                    <div id="drugtype-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Compare detection rates for each of the five major substance categories.
-                    </p>
-                </div>
-
-                <div class="viz-card">
-                    <div class="viz-header">
-                        <h3 class="viz-title">Regional Substance Profiles</h3>
-                        <div class="viz-controls">
-                            <label for="composition-year">Year:</label>
-                            <select id="composition-year"></select>
-                        </div>
-                    </div>
-                    <div class="viz-actions">
-                        <button class="btn-export" data-target="composition-chart" data-filename="drug_composition.svg">Export SVG</button>
-                    </div>
-                    <div id="composition-chart" class="viz-container"></div>
-                    <p class="viz-caption">
-                        Normalized stacked bars showing substance mix proportion by jurisdiction.
-                    </p>
-                </div>
-            </section>
-
-        <!-- Section: Deep Dive Analysis -->
-        <section class="viz-section" id="analysis">
-            <div class="section-header">
-                <div class="section-title-group">
-                    <h2 class="section-title">Advanced Analysis</h2>
-                    <p class="section-description">Multi-dimensional views and creative visualizations with interactive insights</p>
-                </div>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Jurisdiction × Substance Matrix</h3>
-                    <div class="viz-controls">
-                        <label for="heatmap-year">Year:</label>
-                        <select id="heatmap-year" aria-label="Select year for heatmap analysis"></select>
-                    </div>
-                </div>
-                <div class="viz-actions">
-                    <button class="btn-export" data-target="heatmap-chart" data-filename="heatmap_analysis.svg" aria-label="Export heatmap as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="heatmap-chart" data-filename="heatmap_analysis.png" data-format="png" aria-label="Export heatmap as PNG">Export PNG</button>
-                </div>
-                <div id="heatmap-chart" class="viz-container" role="img" aria-label="Interactive heatmap showing substance concentrations by jurisdiction"></div>
-                <p class="viz-caption">
-                    <strong>Interactive Analysis:</strong> Click any cell to filter other visualizations. Darker cells indicate higher concentrations. 
-                    This matrix reveals patterns in substance-jurisdiction relationships that traditional charts might miss.
-                </p>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Enforcement Dynamics Bubble Chart</h3>
-                    <div class="viz-controls">
-                        <label for="bubble-year">Year:</label>
-                        <select id="bubble-year" aria-label="Select year for bubble analysis"></select>
-                    </div>
-                </div>
-                <div class="viz-actions">
-                    <button class="btn-export" data-target="bubble-chart" data-filename="bubble_dynamics.svg" aria-label="Export bubble chart as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="bubble-chart" data-filename="bubble_dynamics.png" data-format="png" aria-label="Export bubble chart as PNG">Export PNG</button>
-                </div>
-                <div id="bubble-chart" class="viz-container" role="img" aria-label="Interactive bubble chart showing enforcement dynamics"></div>
-                <p class="viz-caption">
-                    <strong>Multi-dimensional Analysis:</strong> Bubble size represents arrest volume, position shows fines vs positive tests relationship. 
-                    Hover for detailed metrics, click to cross-filter. Force simulation prevents overlap for clarity.
-                </p>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Multi-Dimensional Radar Analysis</h3>
-                    <div class="viz-controls">
-                        <label for="radar-year">Year:</label>
-                        <select id="radar-year" aria-label="Select year for radar analysis"></select>
-                    </div>
-                </div>
-                <div class="viz-actions">
-                    <button class="btn-export" data-target="radar-chart" data-filename="radar_comparison.svg" aria-label="Export radar chart as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="radar-chart" data-filename="radar_comparison.png" data-format="png" aria-label="Export radar chart as PNG">Export PNG</button>
-                </div>
-                <div id="radar-chart" class="viz-container" role="img" aria-label="Interactive radar chart comparing enforcement metrics"></div>
-                <p class="viz-caption">
-                    <strong>Advanced Comparison:</strong> Normalized comparison across 5 key metrics including arrest rates, fine efficiency, 
-                    and drug diversity. Interactive legend allows toggling jurisdictions for focused analysis.
-                </p>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Temporal Stream Graph</h3>
-                </div>
-                <div class="viz-actions">
-                    <button class="btn-export" data-target="stream-chart" data-filename="stream_evolution.svg" aria-label="Export stream graph as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="stream-chart" data-filename="stream_evolution.png" data-format="png" aria-label="Export stream graph as PNG">Export PNG</button>
-                </div>
-                <div id="stream-chart" class="viz-container" role="img" aria-label="Interactive stream graph showing substance evolution over time"></div>
-                <p class="viz-caption">
-                    <strong>Flowing Visualization:</strong> Smooth, animated streams show how substance patterns have evolved. 
-                    Click streams to filter by drug type. Wiggle offset reveals underlying trends more clearly.
-                </p>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Radial Timeline Visualization</h3>
-                </div>
-                <div class="viz-actions">
-                    <button class="btn-export" data-target="radial-chart" data-filename="radial_timeline.svg" aria-label="Export radial chart as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="radial-chart" data-filename="radial_timeline.png" data-format="png" aria-label="Export radial chart as PNG">Export PNG</button>
-                </div>
-                <div id="radial-chart" class="viz-container" role="img" aria-label="Interactive radial timeline showing enforcement trends"></div>
-                <p class="viz-caption">
-                    <strong>Circular Perspective:</strong> Radial visualization reveals cyclical patterns and growth trajectories 
-                    that linear charts might obscure. Each segment represents a year of enforcement data.
-                </p>
-            </div>
-
-            <div class="viz-card">
-                <div class="viz-header">
-                    <h3 class="viz-title">Interactive Animated Timeline</h3>
-                </div>
-                <div class="viz-actions">
-                    <button id="play-timeline" class="btn-action" aria-label="Play timeline animation">▶ Play</button>
-                    <button id="pause-timeline" class="btn-action" aria-label="Pause timeline animation">⏸ Pause</button>
-                    <button class="btn-export" data-target="timeline-chart" data-filename="animated_timeline.svg" aria-label="Export timeline as SVG">Export SVG</button>
-                    <button class="btn-export" data-target="timeline-chart" data-filename="animated_timeline.png" data-format="png" aria-label="Export timeline as PNG">Export PNG</button>
-                </div>
-                <div id="timeline-chart" class="viz-container" role="img" aria-label="Interactive animated timeline showing year-by-year evolution"></div>
-                <p class="viz-caption">
-                    <strong>Temporal Journey:</strong> Watch patterns emerge year by year with smooth transitions. 
-                    Control playback speed and manually scrub through years. Connection lines show trends between consecutive years.
-                </p>
             </div>
         </section>
 
-            <!-- Methodology & Context -->
-            <section class="context-section">
-                <div class="context-grid">
-                    <div class="context-card">
-                        <h3>Data & Methodology</h3>
-                        <p>
-                            This dashboard analyzes roadside drug testing enforcement data (2008–2024) 
-                            from the BITRE National Road Safety Data Hub. Data was processed using KNIME 
-                            workflows and Python scripts to ensure quality and consistency.
-                        </p>
-                        <ul>
-                            <li>Filtered to confirmed positive drug tests only</li>
-                            <li>Harmonized drug flags to binary 0/1 schema</li>
-                            <li>Aggregated by year, jurisdiction, age group, and substance</li>
-                            <li>All personally identifiable information removed</li>
-                        </ul>
+        <!-- Section 2: Trends -->
+        <section id="trends" class="section">
+            <div class="container">
+                <span class="section-number">02</span>
+                <h2>A Problem That's Growing</h2>
+                <p class="section-lead">Detections have increased 23× since 2008. More testing reveals more impaired drivers on our roads.</p>
+                
+                <div class="chart-controls">
+                    <button class="chart-btn active" data-view="area">Area</button>
+                    <button class="chart-btn" data-view="line">Line</button>
+                </div>
+                
+                <div class="chart-container">
+                    <div id="trend-chart" class="chart"></div>
+                </div>
+                
+                <!-- Key Insights -->
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3>Scale of Testing</h3>
+                        <p>500,000+ tests conducted annually. 55,391 total detections since 2008—that's 151 impaired drivers caught per day in 2024.</p>
                     </div>
-
-                    <div class="context-card">
-                        <h3>Important Context</h3>
-                        <p>
-                            <strong>Testing accuracy:</strong> Current roadside devices show 5–10% false positives 
-                            and 9–16% false negatives for THC. Positive results require confirmatory testing.
-                        </p>
-                        <p>
-                            <strong>Limitations:</strong> "Presence" offences cannot distinguish prescribed 
-                            medicinal cannabis from illicit use. Detailed location data (metro vs regional) 
-                            is primarily available for 2023–2024.
-                        </p>
+                    <div class="insight-card">
+                        <h3>Testing Disparity</h3>
+                        <p>NSW and VIC conduct most tests. Smaller jurisdictions like NT show higher detection rates relative to population.</p>
                     </div>
-
-                    <div class="context-card">
-                        <h3>Key Research Findings</h3>
-                        <ul>
-                            <li>Methylamphetamine increases crash risk by <strong>19 times</strong> (Drummer et al., 2020)</li>
-                            <li>THC (cannabis) increases crash risk by <strong>1.9 times</strong></li>
-                            <li>Targeted RDT shows measurable deterrence effects (Cameron et al., 2022)</li>
-                            <li>Victorian enforcement expansion reduced drug-driving (MUARC, 2021)</li>
-                        </ul>
+                    <div class="insight-card">
+                        <h3>Cocaine Surge</h3>
+                        <p>Cocaine detections up 133% in 2024. Amphetamine remains the most commonly detected substance overall.</p>
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <footer class="dashboard-footer">
-            <div class="footer-content">
-                <p class="footer-main">© 2024 COS30045 – Data Visualisation Project</p>
-                <p class="footer-sub">Built with D3.js, KNIME, and modern web technologies</p>
-                <p class="footer-note">Data source: BITRE National Road Safety Data Hub • Analysis period: 2008–2024</p>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <!-- Section 3: Geography -->
+        <section id="geography" class="section">
+            <div class="container">
+                <span class="section-number">03</span>
+                <h2>Where Is This Happening?</h2>
+                <p class="section-lead">Testing intensity varies widely. NSW and Victoria lead in volume, but smaller states show higher detection rates per capita.</p>
+                
+                <!-- Map in its own full-width container -->
+                <div class="chart-container full-width map-section">
+                    <h3 class="chart-title">Detection Hotspots</h3>
+                    <p class="chart-subtitle">Click a state or use the buttons below to view detailed statistics</p>
+                    <div class="chart-controls">
+                        <button class="chart-btn active" data-view="detections">Total Detections</button>
+                        <button class="chart-btn" data-view="rate">Positive Rate %</button>
+                    </div>
+                    <div class="state-selector" role="group" aria-label="Select a state">
+                        <button class="state-btn" data-state="NSW" aria-label="New South Wales">NSW</button>
+                        <button class="state-btn" data-state="VIC" aria-label="Victoria">VIC</button>
+                        <button class="state-btn" data-state="QLD" aria-label="Queensland">QLD</button>
+                        <button class="state-btn" data-state="WA" aria-label="Western Australia">WA</button>
+                        <button class="state-btn" data-state="SA" aria-label="South Australia">SA</button>
+                        <button class="state-btn" data-state="TAS" aria-label="Tasmania">TAS</button>
+                        <button class="state-btn" data-state="NT" aria-label="Northern Territory">NT</button>
+                        <button class="state-btn" data-state="ACT" aria-label="Australian Capital Territory">ACT</button>
+                    </div>
+                    <div class="map-layout">
+                        <div id="map-chart" class="chart map-chart-large" tabindex="0" role="application" aria-label="Interactive map of Australian states showing drug detection data"></div>
+                        <div id="map-info-panel" class="map-info-panel" aria-live="polite">
+                            <div class="info-panel-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
+                                </svg>
+                                <p>Click a state on the map to see detailed statistics</p>
+                                <p class="hint">Use arrow keys to navigate between states</p>
+                            </div>
+                            <div class="info-panel-content" style="display: none;">
+                                <h4 class="info-state-name"></h4>
+                                <div class="info-stats">
+                                    <div class="info-stat primary">
+                                        <span class="stat-value"></span>
+                                        <span class="stat-label"></span>
+                                    </div>
+                                    <div class="info-stat secondary">
+                                        <span class="stat-value"></span>
+                                        <span class="stat-label"></span>
+                                    </div>
+                                </div>
+                                <div class="info-details">
+                                    <div class="detail-row">
+                                        <span class="detail-label">Tests Conducted</span>
+                                        <span class="detail-value" id="info-tests">—</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Positive Rate</span>
+                                        <span class="detail-value" id="info-rate">—</span>
+                                    </div>
+                                    <div class="detail-row">
+                                        <span class="detail-label">Rank (by detections)</span>
+                                        <span class="detail-value" id="info-rank">—</span>
+                                    </div>
+                                </div>
+                                <button class="info-clear-btn" aria-label="Clear selection">✕ Clear Selection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jurisdiction breakdown -->
+                <div class="chart-container full-width">
+                    <h3 class="chart-title">Breakdown by Drug Type</h3>
+                    <p class="chart-subtitle">Click a state to see its drug composition</p>
+                    <div id="jurisdiction-chart" class="chart"></div>
+                </div>
+                
+                <div class="chart-container full-width">
+                    <h3 class="chart-title">Testing Strategy Comparison</h3>
+                    <p class="chart-subtitle">QLD's targeted testing yields ~21% positive rate vs VIC's broad random testing at ~4.5%</p>
+                    <div id="comparison-chart" class="chart"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Drug Types -->
+        <section id="drugs" class="section">
+            <div class="container">
+                <span class="section-number">04</span>
+                <h2>What Substances Are Detected?</h2>
+                <p class="section-lead">Amphetamine and cannabis dominate, but cocaine is surging—up 133% in 2024 alone.</p>
+                
+                <div class="chart-container">
+                    <h3 class="chart-title">2023 vs 2024: Drug Detection Changes</h3>
+                    <div id="slope-chart" class="chart"></div>
+                </div>
+                
+                <div class="chart-container">
+                    <div id="heatmap-chart" class="chart"></div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
     <!-- Tooltip -->
     <div id="tooltip" class="tooltip"></div>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
 </body>
-
 </html>

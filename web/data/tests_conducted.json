@@ -1,0 +1,582 @@
+[
+  {
+    "year": 2008,
+    "jurisdiction": "NSW",
+    "tests_conducted": 20333
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "QLD",
+    "tests_conducted": 10747
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "SA",
+    "tests_conducted": 25903
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "TAS",
+    "tests_conducted": 412
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "VIC",
+    "tests_conducted": 25006
+  },
+  {
+    "year": 2008,
+    "jurisdiction": "WA",
+    "tests_conducted": 9823
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "NSW",
+    "tests_conducted": 24884
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "QLD",
+    "tests_conducted": 12489
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "SA",
+    "tests_conducted": 43681
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "VIC",
+    "tests_conducted": 28083
+  },
+  {
+    "year": 2009,
+    "jurisdiction": "WA",
+    "tests_conducted": 7565
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "NSW",
+    "tests_conducted": 32455
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "QLD",
+    "tests_conducted": 21655
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "SA",
+    "tests_conducted": 45124
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "TAS",
+    "tests_conducted": 1427
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "VIC",
+    "tests_conducted": 41642
+  },
+  {
+    "year": 2010,
+    "jurisdiction": "WA",
+    "tests_conducted": 9773
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "NSW",
+    "tests_conducted": 33528
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "QLD",
+    "tests_conducted": 25172
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "SA",
+    "tests_conducted": 44178
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "TAS",
+    "tests_conducted": 1678
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "VIC",
+    "tests_conducted": 25140
+  },
+  {
+    "year": 2011,
+    "jurisdiction": "WA",
+    "tests_conducted": 7637
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "ACT",
+    "tests_conducted": 1733
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "NSW",
+    "tests_conducted": 31446
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "QLD",
+    "tests_conducted": 19686
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "SA",
+    "tests_conducted": 43569
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "TAS",
+    "tests_conducted": 1698
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "VIC",
+    "tests_conducted": 47745
+  },
+  {
+    "year": 2012,
+    "jurisdiction": "WA",
+    "tests_conducted": 9124
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2429
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "NSW",
+    "tests_conducted": 34280
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "QLD",
+    "tests_conducted": 20787
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "SA",
+    "tests_conducted": 51179
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "TAS",
+    "tests_conducted": 1819
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "VIC",
+    "tests_conducted": 39471
+  },
+  {
+    "year": 2013,
+    "jurisdiction": "WA",
+    "tests_conducted": 7265
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2520
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "NSW",
+    "tests_conducted": 38830
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "QLD",
+    "tests_conducted": 21225
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "SA",
+    "tests_conducted": 49777
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "TAS",
+    "tests_conducted": 3431
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "VIC",
+    "tests_conducted": 55908
+  },
+  {
+    "year": 2014,
+    "jurisdiction": "WA",
+    "tests_conducted": 14513
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2090
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "NSW",
+    "tests_conducted": 62247
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "QLD",
+    "tests_conducted": 39950
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "SA",
+    "tests_conducted": 53691
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "TAS",
+    "tests_conducted": 3738
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "VIC",
+    "tests_conducted": 106503
+  },
+  {
+    "year": 2015,
+    "jurisdiction": "WA",
+    "tests_conducted": 29914
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2721
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "NSW",
+    "tests_conducted": 89101
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "QLD",
+    "tests_conducted": 50812
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "SA",
+    "tests_conducted": 48690
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "TAS",
+    "tests_conducted": 3722
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "VIC",
+    "tests_conducted": 95104
+  },
+  {
+    "year": 2016,
+    "jurisdiction": "WA",
+    "tests_conducted": 35448
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2919
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "NSW",
+    "tests_conducted": 111176
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "QLD",
+    "tests_conducted": 62098
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "SA",
+    "tests_conducted": 49626
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "TAS",
+    "tests_conducted": 3730
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "VIC",
+    "tests_conducted": 100475
+  },
+  {
+    "year": 2017,
+    "jurisdiction": "WA",
+    "tests_conducted": 38576
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "ACT",
+    "tests_conducted": 3228
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "NSW",
+    "tests_conducted": 115874
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "QLD",
+    "tests_conducted": 67784
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "SA",
+    "tests_conducted": 51382
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "TAS",
+    "tests_conducted": 4005
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "VIC",
+    "tests_conducted": 109780
+  },
+  {
+    "year": 2018,
+    "jurisdiction": "WA",
+    "tests_conducted": 40299
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "ACT",
+    "tests_conducted": 4128
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "NSW",
+    "tests_conducted": 166351
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "QLD",
+    "tests_conducted": 66959
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "SA",
+    "tests_conducted": 49062
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "TAS",
+    "tests_conducted": 4826
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "VIC",
+    "tests_conducted": 176294
+  },
+  {
+    "year": 2019,
+    "jurisdiction": "WA",
+    "tests_conducted": 39695
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2866
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "NSW",
+    "tests_conducted": 129618
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "QLD",
+    "tests_conducted": 31595
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "SA",
+    "tests_conducted": 34767
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "TAS",
+    "tests_conducted": 5219
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "VIC",
+    "tests_conducted": 90749
+  },
+  {
+    "year": 2020,
+    "jurisdiction": "WA",
+    "tests_conducted": 27795
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "ACT",
+    "tests_conducted": 808
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "NSW",
+    "tests_conducted": 105407
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "NT",
+    "tests_conducted": 1995
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "QLD",
+    "tests_conducted": 48147
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "SA",
+    "tests_conducted": 27814
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "TAS",
+    "tests_conducted": 4384
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "VIC",
+    "tests_conducted": 163764
+  },
+  {
+    "year": 2021,
+    "jurisdiction": "WA",
+    "tests_conducted": 41409
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "ACT",
+    "tests_conducted": 2757
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "NSW",
+    "tests_conducted": 111052
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "NT",
+    "tests_conducted": 1119
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "QLD",
+    "tests_conducted": 62602
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "SA",
+    "tests_conducted": 64861
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "TAS",
+    "tests_conducted": 4467
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "VIC",
+    "tests_conducted": 167648
+  },
+  {
+    "year": 2022,
+    "jurisdiction": "WA",
+    "tests_conducted": 43627
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "ACT",
+    "tests_conducted": 1050
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "NSW",
+    "tests_conducted": 159610
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "QLD",
+    "tests_conducted": 57099
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "SA",
+    "tests_conducted": 52578
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "TAS",
+    "tests_conducted": 4925
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "VIC",
+    "tests_conducted": 150036
+  },
+  {
+    "year": 2023,
+    "jurisdiction": "WA",
+    "tests_conducted": 45901
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "ACT",
+    "tests_conducted": 1567
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "NSW",
+    "tests_conducted": 231258
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "QLD",
+    "tests_conducted": 56662
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "SA",
+    "tests_conducted": 52721
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "TAS",
+    "tests_conducted": 5298
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "VIC",
+    "tests_conducted": 95958
+  },
+  {
+    "year": 2024,
+    "jurisdiction": "WA",
+    "tests_conducted": 57219
+  }
+]
