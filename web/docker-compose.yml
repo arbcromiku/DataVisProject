@@ -1,13 +1,10 @@
-version: '3.8'
-
 services:
   datavis:
     build: .
     container_name: datavis-dashboard
     ports:
-      - "8080:80"
+      - "3000:3000"
     volumes:
-      # Mount data files - changes reflect immediately
-      - ./knime_exports:/usr/share/nginx/html/knime_exports:ro
-      - ./police_data.json:/usr/share/nginx/html/police_data.json:ro
+      # Mount all static files for Bun serving with write access for file watching
+      - .:/app
     restart: unless-stopped

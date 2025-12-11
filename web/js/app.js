@@ -424,7 +424,7 @@ class App {
                 description: 'Reduced testing during lockdowns'
             },
             {
-                year: 2023,
+                year: 2024,
                 label: 'Record High',
                 description: 'Expanded testing programs'
             }

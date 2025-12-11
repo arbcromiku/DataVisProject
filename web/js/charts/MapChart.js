@@ -219,6 +219,11 @@ export class MapChart extends BaseChart {
             .attr('text-anchor', 'middle')
             .attr('dy', '0.35em')
             .attr('pointer-events', 'none')
+            .attr('fill', d => {
+                const stateName = this.getStateAbbrev(d.properties);
+                const data = dataMap.get(stateName) || { value: 0, hasData: false };
+                return this.shouldUseDarkText(data.value, data.hasData) ? '#1a1a2e' : 'white';
+            })
             .text(d => this.getStateAbbrev(d.properties));
 
         // Add value labels below state abbreviations
@@ -233,6 +238,11 @@ export class MapChart extends BaseChart {
             })
             .attr('text-anchor', 'middle')
             .attr('dy', '0.35em')
+            .attr('fill', d => {
+                const stateName = this.getStateAbbrev(d.properties);
+                const data = dataMap.get(stateName) || { value: 0, hasData: false };
+                return this.shouldUseDarkText(data.value, data.hasData) ? '#1a1a2e' : 'white';
+            })
             .text(d => {
                 const stateName = this.getStateAbbrev(d.properties);
                 const data = dataMap.get(stateName) || { value: 0, hasData: false };
@@ -370,6 +380,17 @@ export class MapChart extends BaseChart {
     }
 
     /**
+     * Determine if dark text should be used based on value (light backgrounds need dark text)
+     */
+    shouldUseDarkText(value, hasData) {
+        if (!hasData) return true;  // No data = grey background = dark text
+        // Low values get light colors, need dark text
+        const domain = this.colorScale.domain();
+        const threshold = domain[0] + (domain[1] - domain[0]) * 0.3;
+        return value < threshold;
+    }
+
+    /**
      * Get state abbreviation from GeoJSON properties
      */
     getStateAbbrev(properties) {
@@ -464,9 +485,7 @@ export class MapChart extends BaseChart {
         // Highlight state
         d3.select(event.target)
             .transition()
-            .duration(150)
-            .attr('opacity', 0.8)
-            .attr('stroke-width', 3);
+            .duration(150);
 
         // Format value based on view mode and data availability
         let formattedValue, detailsText, color;
@@ -503,8 +522,7 @@ export class MapChart extends BaseChart {
         // Reset hover effects but preserve selection
         this.chartGroup.selectAll('.state-path:not(.selected)')
             .transition()
-            .duration(150)
-            .attr('opacity', null);
+            .duration(150);
 
         this.tooltip.hide();
     }
@@ -527,15 +545,20 @@ export class MapChart extends BaseChart {
      * Select a state and update info panel
      */
     selectState(stateName) {
+        console.log('selectState called:', stateName);
         this.selectedState = stateName;
         
         // Dim non-selected states, highlight selected
+        console.log('Removing selected class from all states');
         this.chartGroup.selectAll('.state-path')
             .classed('selected', false);
         
-        this.chartGroup.selectAll(`.state-path[data-state="${stateName}"]`)
-            .classed('selected', true)
-            .raise();  // Bring to front
+        const selectedEl = this.chartGroup.selectAll(`.state-path[data-state="${stateName}"]`);
+        console.log('Adding selected class to:', stateName, 'Element:', selectedEl.node());
+        console.log('Element current style:', selectedEl.node()?.getAttribute('style'));
+        console.log('Element current class:', selectedEl.node()?.getAttribute('class'));
+        selectedEl.classed('selected', true);
+        console.log('After - Element class:', selectedEl.node()?.getAttribute('class'));
         
         // Update ACT inset container highlight
         this.chartGroup.select('.act-inset .inset-bg')

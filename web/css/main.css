@@ -603,19 +603,6 @@ p {
 /* State path styling for selection */
 .state-path {
     cursor: pointer;
-    transition: filter 0.2s ease, opacity 0.15s ease;
-}
-
-.state-path.selected {
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5)) brightness(1.1);
-}
-
-.state-path:not(.selected) {
-    opacity: 0.85;
-}
-
-.state-path.selected ~ .state-path:not(.selected) {
-    opacity: 0.6;
 }
 
 .state-path:focus {
@@ -652,7 +639,6 @@ p {
 .act-inset .inset-bg.inset-selected {
     stroke: #0072B2;
     stroke-width: 2;
-    filter: drop-shadow(0 0 4px rgba(0, 114, 178, 0.4));
 }
 
 .act-inset-path {

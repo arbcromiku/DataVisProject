@@ -294,12 +294,17 @@ export class TrendChart extends BaseChart {
                 .attr('cy', y)
                 .attr('r', 12);
 
-            // Label
+            // Label - adjust anchor for edge cases
+            const isNearRightEdge = x > this.width - 60;
+            const isNearLeftEdge = x < 60;
+            const textAnchor = isNearRightEdge ? 'end' : (isNearLeftEdge ? 'start' : 'middle');
+            const xOffset = isNearRightEdge ? -10 : (isNearLeftEdge ? 10 : 0);
+            
             annotationGroup.append('text')
                 .attr('class', 'annotation-text')
-                .attr('x', x)
+                .attr('x', x + xOffset)
                 .attr('y', -8)
-                .attr('text-anchor', 'middle')
+                .attr('text-anchor', textAnchor)
                 .attr('font-weight', '500')
                 .text(annotation.label);
         });
